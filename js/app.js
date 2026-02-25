@@ -423,7 +423,13 @@ App.autoGrade = function (score) {
 
 /* ── Input key handler ────────────────────────────────────────── */
 App.onInputKey = function (event) {
-  if (event.key === 'Enter') App.checkAnswer();
+  if (event.key !== 'Enter') return;
+  var feedback = el('phase-feedback');
+  if (feedback && feedback.classList.contains('active')) {
+    App.nextWord();
+  } else {
+    App.checkAnswer();
+  }
 };
 
 /* ════════════════════════════════════════════════════════════════════
@@ -599,6 +605,16 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   App.navigate('splash');
+
+  // Global Enter key: advance from feedback phase without needing to click Weiter
+  document.addEventListener('keydown', function (event) {
+    if (event.key !== 'Enter') return;
+    var feedback = el('phase-feedback');
+    if (feedback && feedback.classList.contains('active')) {
+      event.preventDefault();
+      App.nextWord();
+    }
+  });
 });
 
 window.App = App;
