@@ -1,0 +1,81 @@
+{
+  "vocabulary": [
+    {
+      "romaji": "eiga",
+      "hiragana": "えいが",
+      "german": "Spielfilm"
+    },
+    {
+      "romaji": "ongaku",
+      "hiragana": "おんがく",
+      "german": "Musik"
+    },
+    {
+      "romaji": "shinbun",
+      "hiragana": "しんぶん",
+      "german": "Zeitung"
+    },
+    {
+      "romaji": "terebi",
+      "hiragana": "てれび / テレビ",
+      "german": "Fernseher; Fernsehen"
+    },
+    {
+      "romaji": "rajio",
+      "hiragana": "らじお / ラジオ",
+      "german": "Radio"
+    },
+    {
+      "romaji": "watashi",
+      "hiragana": "わたし",
+      "german": "ich"
+    },
+    {
+      "romaji": "o-kashi",
+      "hiragana": "おかし",
+      "german": "Süßigkeiten, Gebäck"
+    },
+    {
+      "romaji": "o-sake",
+      "hiragana": "おさけ",
+      "german": "Reiswein; alkohol. Getränk"
+    },
+    {
+      "romaji": "kikimasu",
+      "hiragana": "ききます",
+      "german": "(an/zu)hören; fragen"
+    },
+    {
+      "romaji": "mimasu",
+      "hiragana": "みます",
+      "german": "(an/zu)sehen"
+    },
+    {
+      "romaji": "tsukurimasu",
+      "hiragana": "つくります",
+      "german": "herstellen, zubereiten"
+    },
+    {
+      "romaji": "yomimasu",
+      "hiragana": "よみます",
+      "german": "lesen"
+    },
+    {
+      "romaji": "yoku",
+      "hiragana": "よく",
+      "german": "oft, häufig"
+    },
+    {
+      "romaji": "amari",
+      "hiragana": "あまり",
+      "german": "selten, kaum, nicht sehr",
+      "note": "+ Verneinung"
+    },
+    {
+      "romaji": "zenzen",
+      "hiragana": "ぜんぜん",
+      "german": "gar nicht, nie",
+      "note": "+ Verneinung"
+    }
+  ]
+}

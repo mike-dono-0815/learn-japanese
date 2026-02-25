@@ -1,0 +1,65 @@
+{
+  "vocabulary": [
+    {
+      "romaji": "hai",
+      "hiragana": "はい",
+      "german": "ja"
+    },
+    {
+      "romaji": "iie",
+      "hiragana": "いいえ",
+      "german": "nein"
+    },
+    {
+      "romaji": "douzo",
+      "hiragana": "どうぞ",
+      "german": "bitte (beim Anbieten)"
+    },
+    {
+      "romaji": "doumo",
+      "hiragana": "どうも",
+      "german": "danke"
+    },
+    {
+      "romaji": "kyou",
+      "hiragana": "きょう",
+      "german": "heute"
+    },
+    {
+      "romaji": "ashita",
+      "hiragana": "あした",
+      "german": "morgen"
+    },
+    {
+      "romaji": "asatte",
+      "hiragana": "あさって",
+      "german": "übermorgen"
+    },
+    {
+      "romaji": "tabemasu",
+      "hiragana": "たべます",
+      "german": "essen"
+    },
+    {
+      "romaji": "nomimasu",
+      "hiragana": "のみます",
+      "german": "trinken"
+    },
+    {
+      "romaji": "hanashimasu",
+      "hiragana": "はなします",
+      "german": "reden, sprechen"
+    },
+    {
+      "romaji": "machimasu",
+      "hiragana": "まちます",
+      "german": "warten"
+    },
+    {
+      "romaji": "asobimasu",
+      "hiragana": "あそびます",
+      "german": "spielen, sich vergnügen",
+      "note": "Das Wort „asobimasu“ hat eine weite Bedeutung. Es drückt aus, dass man sich in irgendeiner Weise vergnügt. Deshalb wird es oft mit „spielen“ übersetzt. Man verwendet es aber auch..."
+    }
+  ]
+}

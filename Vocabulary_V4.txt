@@ -1,0 +1,72 @@
+[
+  {
+    "romaji": "chizu",
+    "hiragana": "ちず",
+    "german": "(Land-)Karte, Plan"
+  },
+  {
+    "romaji": "kami",
+    "hiragana": "かみ",
+    "german": "Papier"
+  },
+  {
+    "romaji": "jisho",
+    "hiragana": "じしょ",
+    "german": "Wörterbuch"
+  },
+  {
+    "romaji": "hagaki",
+    "hiragana": "はがき",
+    "german": "Postkarte"
+  },
+  {
+    "romaji": "shashin",
+    "hiragana": "しゃしん",
+    "german": "Foto"
+  },
+  {
+    "romaji": "enpitsu",
+    "hiragana": "えんぴつ",
+    "german": "Bleistift"
+  },
+  {
+    "romaji": "mizu",
+    "hiragana": "みず",
+    "german": "(kaltes) Wasser"
+  },
+  {
+    "romaji": "a",
+    "hiragana": "あ",
+    "german": "(drückt Überraschung aus)"
+  },
+  {
+    "romaji": "kochira",
+    "hiragana": "こちら",
+    "german": "diese Person hier"
+  },
+  {
+    "romaji": "tomodachi",
+    "hiragana": "ともだち",
+    "german": "Freund/in (nicht Liebespartner)"
+  },
+  {
+    "romaji": "o-cha",
+    "hiragana": "おちゃ",
+    "german": "Tee"
+  },
+  {
+    "romaji": "chigaimasu",
+    "hiragana": "ちがいます",
+    "german": "anders sein, nicht stimmen"
+  },
+  {
+    "romaji": "wakarimasu",
+    "hiragana": "わかります",
+    "german": "verstehen; wissen"
+  },
+  {
+    "romaji": "kakimasu",
+    "hiragana": "かきます",
+    "german": "schreiben; zeichnen"
+  }
+]

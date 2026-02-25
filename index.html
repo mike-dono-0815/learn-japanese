@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mori no Gakkō – Japanisch Lernen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SPLASH / LANDING SCREEN
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="screen-splash" class="screen active">
+    <div class="splash-inner">
+      <div class="splash-image-wrap">
+        <img src="JapaneseLearning.png" alt="Mori no Gakkō" class="splash-image">
+      </div>
+      <div class="splash-content">
+        <p class="splash-kana">もりのがっこう</p>
+        <h1 class="splash-title">Mori no Gakkō</h1>
+        <p class="splash-sub">Dein persönlicher Japanisch-Trainer</p>
+        <button class="splash-btn" onclick="App.navigate('home')">Lernen beginnen →</button>
+      </div>
+      <footer class="splash-footer">
+        Japanisch lernen · Schritt für Schritt
+      </footer>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HOME SCREEN
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="screen-home" class="screen">
+    <div class="screen-inner">
+
+      <header class="home-header">
+        <div class="app-logo" onclick="App.navigate('splash')" style="cursor:pointer">
+          <img src="JapaneseLearning.png" alt="Logo" class="home-logo-img">
+          <div class="home-logo-text">
+            <span class="logo-name">Mori no Gakkō</span>
+            <span class="logo-kana">もりのがっこう</span>
+          </div>
+        </div>
+        <div class="home-global-stats">
+          <span id="home-xp"    class="stat-chip">⭐ 0 XP</span>
+          <span id="home-level" class="stat-chip level-chip">Lv.1</span>
+        </div>
+      </header>
+
+      <main class="home-main">
+
+        <!-- MODE -->
+        <div class="setting-group">
+          <label class="setting-label">Modus</label>
+          <div class="btn-group" id="mode-group">
+            <button class="btn-toggle active" data-mode="vocabulary" onclick="App.setMode('vocabulary')">Vokabeln</button>
+            <button class="btn-toggle"        data-mode="sentences"  onclick="App.setMode('sentences')">Sätze</button>
+          </div>
+        </div>
+
+        <!-- VERSION -->
+        <div class="setting-group">
+          <label class="setting-label">Wissensstand</label>
+          <select id="version-select" class="select-ctrl" onchange="App.setVersion(this.value)">
+            <option value="v1">V1 – Grundwortschatz</option>
+            <option value="v2">V2 – Alltag</option>
+            <option value="v3">V3 – Freizeit &amp; Medien</option>
+            <option value="v4">V4 – Dinge &amp; Handlungen</option>
+            <option value="v5">V5 – Personen &amp; Berufe</option>
+          </select>
+          <p class="setting-hint" id="version-hint">Enthält 19 Vokabeln</p>
+        </div>
+
+        <!-- DIRECTION (only shown in vocabulary mode) -->
+        <div class="setting-group" id="direction-group">
+          <label class="setting-label">Richtung</label>
+          <div class="btn-group" id="dir-group">
+            <button class="btn-toggle active" data-dir="de-to-jp" onclick="App.setDirection('de-to-jp')">DE → JP</button>
+            <button class="btn-toggle"        data-dir="jp-to-de" onclick="App.setDirection('jp-to-de')">JP → DE</button>
+          </div>
+        </div>
+
+        <!-- START -->
+        <button id="start-btn" class="btn-primary btn-large" onclick="App.startSession()">
+          Lernen beginnen →
+        </button>
+
+        <!-- SECONDARY NAVIGATION -->
+        <div class="home-nav">
+          <button class="btn-ghost" onclick="App.navigate('editor')">✏️ Editor</button>
+          <button class="btn-ghost" onclick="App.navigate('stats')">📊 Statistik</button>
+          <button class="btn-ghost" onclick="App.navigate('reference')">📖 Referenz</button>
+        </div>
+
+      </main>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PRACTICE SCREEN
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="screen-practice" class="screen">
+    <div class="screen-inner">
+
+      <!-- Top bar -->
+      <header class="practice-header">
+        <div class="ph-streak">
+          <span class="streak-fire">🔥</span>
+          <span id="ph-streak">0</span>
+        </div>
+        <div class="ph-score">
+          <span id="ph-correct" class="score-c">0</span>
+          <span class="score-sep">/</span>
+          <span id="ph-total"   class="score-t">0</span>
+        </div>
+        <div class="ph-xp">
+          ⭐ <span id="ph-xp">0</span>
+        </div>
+      </header>
+
+      <main class="practice-main">
+
+        <!-- Question card -->
+        <div id="question-card" class="q-card">
+          <div id="q-direction" class="q-direction">DE → JP</div>
+          <div id="q-text"      class="q-text">—</div>
+          <div id="q-hint-line" class="q-hint-line hidden"></div>
+        </div>
+
+        <!-- Hint button -->
+        <button id="hint-btn" class="btn-hint" onclick="App.showHint()">💡 Hinweis</button>
+
+        <!-- ── PHASE: Input (vocabulary auto-check) ── -->
+        <div id="phase-input" class="practice-phase active">
+          <input
+            id="answer-input"
+            type="text"
+            class="answer-input"
+            placeholder="Deine Antwort …"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            onkeydown="App.onInputKey(event)"
+          >
+          <button class="btn-primary" onclick="App.checkAnswer()">Prüfen ✓</button>
+
+          <div class="quick-grade-divider"><span>oder schnell bewerten</span></div>
+
+          <div class="quick-grade-btns">
+            <button class="btn-quick btn-quick-no" onclick="App.autoGrade(0)">
+              <span class="qg-icon">🙈</span>
+              <span class="qg-label">Keine Ahnung</span>
+            </button>
+            <button class="btn-quick btn-quick-yes" onclick="App.autoGrade(2)">
+              <span class="qg-icon">👍</span>
+              <span class="qg-label">Weiß ich!</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ── PHASE: Auto-feedback (vocabulary) ── -->
+        <div id="phase-feedback" class="practice-phase">
+          <div id="fb-result"   class="fb-result"></div>
+          <div id="fb-correct"  class="fb-correct"></div>
+          <div id="fb-kana"     class="fb-kana"></div>
+          <div id="fb-alts"     class="fb-alts hidden"></div>
+          <button class="btn-primary" onclick="App.nextWord()">Weiter →</button>
+        </div>
+
+        <!-- ── PHASE: Self-grade (sentences) ── -->
+        <div id="phase-selfgrade" class="practice-phase">
+          <div class="sg-label">Deine Antwort:</div>
+          <div id="sg-attempt"  class="sg-attempt"></div>
+          <div class="sg-divider">✦ Musterlösung:</div>
+          <div id="sg-answer"   class="sg-answer"></div>
+          <div id="sg-kana"     class="sg-kana"></div>
+          <div id="sg-alts"     class="sg-alts hidden"></div>
+          <div class="sg-buttons">
+            <button class="btn-grade btn-wrong"   onclick="App.selfGrade(0)">❌ Falsch</button>
+            <button class="btn-grade btn-partial" onclick="App.selfGrade(1)">⚠️ Fast</button>
+            <button class="btn-grade btn-right"   onclick="App.selfGrade(2)">✅ Richtig</button>
+          </div>
+        </div>
+
+        <!-- ── PHASE: Sentence input ── -->
+        <div id="phase-sentence-input" class="practice-phase">
+          <textarea
+            id="sentence-input"
+            class="sentence-input"
+            placeholder="Deine Übersetzung …"
+            rows="3"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+          ></textarea>
+          <button class="btn-primary" onclick="App.revealSentence()">Antwort zeigen</button>
+          <button class="btn-ghost btn-sm" onclick="App.skipSentence()">Überspringen</button>
+        </div>
+
+      </main>
+
+      <footer class="practice-footer">
+        <button class="btn-ghost btn-sm" onclick="App.quitSession()">✕ Sitzung beenden</button>
+      </footer>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SESSION-END SCREEN
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="screen-session-end" class="screen">
+    <div class="screen-inner">
+
+      <header class="simple-header">
+        <h1>Sitzung abgeschlossen</h1>
+      </header>
+
+      <main class="se-main">
+        <div class="se-stats">
+          <div class="se-stat">
+            <span class="se-icon">✅</span>
+            <span id="se-correct" class="se-val">0</span>
+            <span class="se-lbl">Richtig</span>
+          </div>
+          <div class="se-stat">
+            <span class="se-icon">❌</span>
+            <span id="se-wrong" class="se-val">0</span>
+            <span class="se-lbl">Falsch</span>
+          </div>
+          <div class="se-stat">
+            <span class="se-icon">🔥</span>
+            <span id="se-streak" class="se-val">0</span>
+            <span class="se-lbl">Best Streak</span>
+          </div>
+          <div class="se-stat">
+            <span class="se-icon">⭐</span>
+            <span id="se-xp" class="se-val">0</span>
+            <span class="se-lbl">XP verdient</span>
+          </div>
+        </div>
+
+        <div id="se-missed-section" class="se-missed hidden">
+          <h3>Zum Wiederholen:</h3>
+          <ul id="se-missed-list" class="se-missed-list"></ul>
+        </div>
+
+        <div class="se-actions">
+          <button class="btn-primary" onclick="App.startSession()">Nochmal üben</button>
+          <button class="btn-secondary" onclick="App.navigate('home')">← Startseite</button>
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       EDITOR SCREEN
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="screen-editor" class="screen">
+    <div class="screen-inner">
+
+      <header class="simple-header">
+        <button class="btn-back" onclick="App.navigate('home')">← Zurück</button>
+        <h1>Editor</h1>
+        <button class="btn-icon" onclick="App.Editor.exportCurrent()" title="Als JSON herunterladen">💾</button>
+      </header>
+
+      <div class="editor-controls">
+        <div class="editor-tabs">
+          <button class="tab active" data-tab="vocabulary" onclick="App.Editor.switchTab('vocabulary')">Vokabeln</button>
+          <button class="tab"        data-tab="sentences"  onclick="App.Editor.switchTab('sentences')">Sätze</button>
+        </div>
+        <div class="editor-actions">
+          <select id="editor-version" class="select-ctrl select-sm" onchange="App.Editor.setVersion(this.value)">
+            <option value="v1">V1</option>
+            <option value="v2">V2</option>
+            <option value="v3">V3</option>
+            <option value="v4">V4</option>
+            <option value="v5">V5</option>
+          </select>
+          <label class="btn-secondary btn-sm editor-load-btn">
+            📂 Laden
+            <input type="file" id="file-input" accept=".json,.txt" style="display:none" onchange="App.Editor.loadFromFile(event)">
+          </label>
+          <button class="btn-primary btn-sm" onclick="App.Editor.showAddForm()">+ Neu</button>
+        </div>
+      </div>
+
+      <div class="editor-table-wrap">
+        <table id="editor-table" class="editor-table">
+          <thead id="editor-thead"></thead>
+          <tbody id="editor-tbody"></tbody>
+        </table>
+        <p id="editor-empty" class="editor-empty hidden">Keine Einträge vorhanden.</p>
+      </div>
+
+      <!-- Reset override button -->
+      <div class="editor-footer">
+        <button class="btn-danger btn-sm" onclick="App.Editor.resetToDefaults()">↺ Zurücksetzen</button>
+        <span class="editor-footer-hint">Setzt diese Version auf die Originaldaten zurück</span>
+      </div>
+
+    </div>
+
+    <!-- Add / Edit Modal -->
+    <div id="editor-modal" class="modal hidden">
+      <div class="modal-backdrop" onclick="App.Editor.closeModal()"></div>
+      <div class="modal-box">
+        <h2 id="modal-title">Eintrag hinzufügen</h2>
+        <form id="modal-form" class="modal-form"></form>
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="App.Editor.closeModal()">Abbrechen</button>
+          <button class="btn-primary"   onclick="App.Editor.saveEntry()">Speichern</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       STATS SCREEN
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="screen-stats" class="screen">
+    <div class="screen-inner">
+      <header class="simple-header">
+        <button class="btn-back" onclick="App.navigate('home')">← Zurück</button>
+        <h1>Statistik</h1>
+        <button class="btn-icon danger" onclick="App.Stats.resetAll()" title="Alles zurücksetzen">🗑</button>
+      </header>
+      <main id="stats-main" class="stats-main">
+        <!-- filled by JS -->
+      </main>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       REFERENCE SCREEN  (common knowledge viewer)
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="screen-reference" class="screen">
+    <div class="screen-inner">
+      <header class="simple-header">
+        <button class="btn-back" onclick="App.navigate('home')">← Zurück</button>
+        <h1>Referenz</h1>
+      </header>
+      <main id="ref-main" class="ref-main">
+        <!-- filled by JS -->
+      </main>
+    </div>
+  </section>
+
+</div><!-- #app -->
+
+
+<!-- ── OVERLAYS / GLOBAL UI ────────────────────────────────────── -->
+
+<!-- Streak / level-up celebration overlay -->
+<div id="celebration-overlay" class="celebration-overlay hidden">
+  <div id="celebration-box" class="celebration-box"></div>
+</div>
+
+<!-- Confetti canvas -->
+<canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+
+<!-- Toast notification -->
+<div id="toast" class="toast hidden"></div>
+
+
+<!-- ── SCRIPTS (order matters) ────────────────────────────────── -->
+<script src="data/knowledge-bases.js"></script>
+<script src="js/data.js"></script>
+<script src="js/scoring.js"></script>
+<script src="js/checker.js"></script>
+<script src="js/celebration.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

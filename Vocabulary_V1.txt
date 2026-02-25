@@ -1,0 +1,97 @@
+[
+  {
+    "japanese_romaji": "sakaná",
+    "japanese_kana": "さかな",
+    "german": "Fisch"
+  },
+  {
+    "japanese_romaji": "yasai",
+    "japanese_kana": "やさい",
+    "german": "Gemüse"
+  },
+  {
+    "japanese_romaji": "tamágo",
+    "japanese_kana": "たまご",
+    "german": "Ei"
+  },
+  {
+    "japanese_romaji": "pan",
+    "japanese_kana": "ぱん / パン",
+    "german": "Brot"
+  },
+  {
+    "japanese_romaji": "kôhî",
+    "japanese_kana": "こーひー / コーヒー",
+    "german": "Kaffee"
+  },
+  {
+    "japanese_romaji": "kinou",
+    "japanese_kana": "きのう",
+    "german": "gestern"
+  },
+  {
+    "japanese_romaji": "konban",
+    "japanese_kana": "こんばん",
+    "german": "heute Abend"
+  },
+  {
+    "japanese_romaji": "itsúmo",
+    "japanese_kana": "いつも",
+    "german": "immer"
+  },
+  {
+    "japanese_romaji": "taitei",
+    "japanese_kana": "たいてい",
+    "german": "meistens"
+  },
+  {
+    "japanese_romaji": "nani",
+    "japanese_kana": "なに",
+    "german": "was"
+  },
+  {
+    "japanese_romaji": "kaimasu",
+    "japanese_kana": "かいます",
+    "german": "kaufen"
+  },
+  {
+    "japanese_romaji": "yasumimasu",
+    "japanese_kana": "やすみます",
+    "german": "sich ausruhen, Pause machen"
+  },
+  {
+    "japanese_romaji": "shimasu",
+    "japanese_kana": "します",
+    "german": "tun"
+  },
+  {
+    "japanese_romaji": "shigoto o shimasu",
+    "japanese_kana": "しごとをします",
+    "german": "arbeiten"
+  },
+  {
+    "japanese_romaji": "fuku",
+    "japanese_kana": "ふく",
+    "german": "Kleidung, Kleider"
+  },
+  {
+    "japanese_romaji": "hon",
+    "japanese_kana": "ほん",
+    "german": "Buch"
+  },
+  {
+    "japanese_romaji": "zasshi",
+    "japanese_kana": "ざっし",
+    "german": "Zeitschrift"
+  },
+  {
+    "japanese_romaji": "shigoto",
+    "japanese_kana": "しごと",
+    "german": "Arbeit"
+  },
+  {
+    "japanese_romaji": "sumimasen",
+    "japanese_kana": "すみません",
+    "german": "Verzeihung!"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "romaji": "anata",
+    "hiragana": "あなた",
+    "german": "Sie, du"
+  },
+  {
+    "romaji": "dare",
+    "hiragana": "だれ",
+    "german": "wer"
+  },
+  {
+    "romaji": "hito",
+    "hiragana": "ひと",
+    "german": "Person (neutral), Leute"
+  },
+  {
+    "romaji": "kata",
+    "hiragana": "かた",
+    "german": "Person (höflich)"
+  },
+  {
+    "romaji": "kaisha-in",
+    "hiragana": "かいしゃいん",
+    "german": "Angestellte(r)"
+  },
+  {
+    "romaji": "isha",
+    "hiragana": "いしゃ",
+    "german": "Arzt, Ärztin"
+  },
+  {
+    "romaji": "gakusei",
+    "hiragana": "がくせい",
+    "german": "Schüler(in), Student(in)"
+  },
+  {
+    "romaji": "sensei",
+    "hiragana": "せんせい",
+    "german": "Lehrer(in)"
+  },
+  {
+    "romaji": "enjinia",
+    "hiragana": "エンジニア",
+    "german": "Ingenieur(in)"
+  },
+  {
+    "romaji": "Nihon",
+    "hiragana": "にほん",
+    "german": "Japan"
+  },
+  {
+    "romaji": "tokei",
+    "hiragana": "とけい",
+    "german": "Uhr"
+  },
+  {
+    "romaji": "kasa",
+    "hiragana": "かさ",
+    "german": "Schirm"
+  },
+  {
+    "romaji": "gomen nasai",
+    "hiragana": "ごめんなさい",
+    "german": "Es tut mir leid"
+  },
+  {
+    "romaji": "arigatou gozaimasu",
+    "hiragana": "ありがとうございます",
+    "german": "vielen Dank"
+  },
+  {
+    "romaji": "saa ...",
+    "hiragana": "さあ...",
+    "german": "Hm..."
+  }
+]
