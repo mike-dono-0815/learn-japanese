@@ -287,6 +287,19 @@ img     { max-width: 100%; display: block; }
   font-weight: 700;
 }
 
+/* Hint + quick-grade row */
+.hint-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.quick-grade-btns-inline {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
 /* Hint button */
 .btn-hint {
   display: inline-flex; align-items: center; gap: 5px;
@@ -297,10 +310,22 @@ img     { max-width: 100%; display: block; }
   border: 1px solid rgba(254,189,105,.3);
   border-radius: var(--radius-sm);
   transition: background var(--transition);
-  align-self: flex-start;
 }
 .btn-hint:hover:not(:disabled) { background: rgba(254,189,105,.16); }
 .btn-hint:disabled { opacity: .4; cursor: not-allowed; }
+
+/* Compact inline quick-grade buttons */
+.btn-quick-compact {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 7px 11px;
+  border-radius: var(--radius-sm);
+  font-size: .8rem; font-weight: 600;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.btn-quick-compact .qg-icon { font-size: .95rem; line-height: 1; }
 
 /* Self-grade */
 .btn-grade {
@@ -536,34 +561,6 @@ img     { max-width: 100%; display: block; }
 }
 .sentence-input:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(255,153,0,.12); }
 .sentence-input::placeholder { color: var(--text3); }
-
-/* Quick-grade buttons */
-.quick-grade-divider {
-  display: flex; align-items: center; gap: 10px;
-  color: var(--text3); font-size: .72rem;
-  text-transform: uppercase; letter-spacing: .09em;
-  margin: 2px 0;
-}
-.quick-grade-divider::before,
-.quick-grade-divider::after {
-  content: ''; flex: 1; height: 1px; background: var(--border);
-}
-
-.quick-grade-btns {
-  display: flex; gap: 10px;
-}
-
-.btn-quick {
-  flex: 1;
-  display: flex; flex-direction: column; align-items: center; gap: 5px;
-  padding: 13px 8px;
-  border-radius: var(--radius);
-  border: 2px solid transparent;
-  font-weight: 700;
-  transition: all var(--transition);
-}
-.qg-icon  { font-size: 1.5rem; line-height: 1; }
-.qg-label { font-size: .8rem; }
 
 .btn-quick-no {
   background: rgba(204,12,57,.1);

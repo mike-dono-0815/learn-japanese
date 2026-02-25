@@ -131,8 +131,20 @@
           <div id="q-hint-line" class="q-hint-line hidden"></div>
         </div>
 
-        <!-- Hint button -->
-        <button id="hint-btn" class="btn-hint" onclick="App.showHint()">💡 Hinweis</button>
+        <!-- Hint + quick-grade row -->
+        <div class="hint-row">
+          <button id="hint-btn" class="btn-hint" onclick="App.showHint()">💡 Hinweis</button>
+          <div class="quick-grade-btns-inline" id="quick-grade-inline" style="display:none">
+            <button class="btn-quick-compact btn-quick-no" onclick="App.autoGrade(0)">
+              <span class="qg-icon">🙈</span>
+              <span>Keine Ahnung</span>
+            </button>
+            <button class="btn-quick-compact btn-quick-yes" onclick="App.autoGrade(2)">
+              <span class="qg-icon">👍</span>
+              <span>Weiß ich!</span>
+            </button>
+          </div>
+        </div>
 
         <!-- ── PHASE: Input (vocabulary auto-check) ── -->
         <div id="phase-input" class="practice-phase active">
@@ -148,19 +160,6 @@
             onkeydown="App.onInputKey(event)"
           >
           <button class="btn-primary" onclick="App.checkAnswer()">Prüfen ✓</button>
-
-          <div class="quick-grade-divider"><span>oder schnell bewerten</span></div>
-
-          <div class="quick-grade-btns">
-            <button class="btn-quick btn-quick-no" onclick="App.autoGrade(0)">
-              <span class="qg-icon">🙈</span>
-              <span class="qg-label">Keine Ahnung</span>
-            </button>
-            <button class="btn-quick btn-quick-yes" onclick="App.autoGrade(2)">
-              <span class="qg-icon">👍</span>
-              <span class="qg-label">Weiß ich!</span>
-            </button>
-          </div>
         </div>
 
         <!-- ── PHASE: Auto-feedback (vocabulary) ── -->

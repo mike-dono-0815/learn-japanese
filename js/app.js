@@ -568,6 +568,8 @@ function showPhase(name) {
       else            ph.classList.remove('active');
     }
   });
+  var qgi = el('quick-grade-inline');
+  if (qgi) qgi.style.display = (name === 'input') ? 'flex' : 'none';
 }
 
 /* ════════════════════════════════════════════════════════════════════
