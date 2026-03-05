@@ -97,6 +97,7 @@
           <button class="btn-ghost" onclick="App.navigate('editor')">✏️ Editor</button>
           <button class="btn-ghost" onclick="App.navigate('stats')">📊 Statistik</button>
           <button class="btn-ghost" onclick="App.navigate('reference')">📖 Referenz</button>
+          <button id="audio-autoplay-btn" class="btn-ghost" onclick="App.Audio.toggleAutoPlay()">🔊 Auto</button>
         </div>
 
       </main>
@@ -133,6 +134,7 @@
           <div id="q-direction" class="q-direction">DE → JP</div>
           <div id="q-text"      class="q-text">—</div>
           <div id="q-hint-line" class="q-hint-line hidden"></div>
+          <button id="audio-play-btn" class="btn-audio hidden" onclick="App.Audio.replayQuestion()" title="Aussprache abspielen">🔊</button>
         </div>
 
         <!-- Hint + quick-grade row -->
@@ -386,6 +388,7 @@
 <script src="js/checker.js"></script>
 <script src="js/celebration.js"></script>
 <script src="js/editor.js"></script>
+<script src="js/audio.js"></script>
 <script src="js/app.js"></script>
 
 </body>

@@ -122,7 +122,11 @@ App.startSession = function () {
     wrong:       0,
     partial:     0,
     xpEarned:   0,
-    missedItems: []
+    missedItems: [],
+    // Round tracking: fixed shuffled order for first 2 rounds, weighted after
+    roundsCompleted: 0,
+    roundQueue:      App.Scoring.shuffle(items.slice()),
+    roundIndex:      0
   };
 
   App.navigate('practice');
@@ -183,9 +187,28 @@ App._endSession = function () {
 /* ════════════════════════════════════════════════════════════════════
    PRACTICE LOOP
 ═══════════════════════════════════════════════════════════════════ */
+App._pickNextItem = function (s) {
+  // Rounds 1 & 2: iterate through a shuffled copy of all items in fixed order
+  if (s.roundsCompleted < 2) {
+    if (s.roundIndex >= s.roundQueue.length) {
+      // Current round exhausted — start the next one
+      s.roundsCompleted++;
+      if (s.roundsCompleted < 2) {
+        s.roundQueue = App.Scoring.shuffle(s.items.slice());
+        s.roundIndex = 0;
+      }
+    }
+    if (s.roundsCompleted < 2) {
+      return s.roundQueue[s.roundIndex++];
+    }
+  }
+  // Round 3+: weighted random selection
+  return App.Scoring.selectNext(s.items, s.progressMap, s.lastItemId);
+};
+
 App._showNextItem = function () {
   var s = App.state.session;
-  var item = App.Scoring.selectNext(s.items, s.progressMap, s.lastItemId);
+  var item = App._pickNextItem(s);
   if (!item) { App._endSession(); return; }
 
   s.currentItem = item;
@@ -233,6 +256,12 @@ App._showNextItem = function () {
     var sinp = el('sentence-input');
     sinp.value = '';
     setTimeout(function () { sinp.focus(); }, 80);
+  }
+
+  // Auto-play question side only
+  if (App.Audio && App.Audio.isAutoPlay()) {
+    var qSide = s.direction === 'de-to-jp' ? 'de' : 'jp';
+    App.Audio.playItem(item, qSide);
   }
 };
 
@@ -306,6 +335,12 @@ App.checkAnswer = function () {
 
   showPhase('feedback');
 
+  // Play answer side once feedback is revealed
+  if (App.Audio && App.Audio.isAutoPlay()) {
+    var aSide = s.direction === 'de-to-jp' ? 'jp' : 'de';
+    App.Audio.playItem(item, aSide);
+  }
+
   // Streak celebrations
   App.Celebration.onStreakUpdate(s.streak);
 
@@ -347,6 +382,12 @@ App.revealSentence = function () {
   }
 
   showPhase('selfgrade');
+
+  // Play answer side once the model answer is revealed
+  if (App.Audio && App.Audio.isAutoPlay()) {
+    var rSide = s.direction === 'jp-to-de' ? 'de' : 'jp';
+    App.Audio.playItem(item, rSide);
+  }
 };
 
 App.skipSentence = function () {
@@ -601,6 +642,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   App.navigate('splash');
+  App.Audio && App.Audio.init();
 
   // Global Enter key: advance from feedback phase without needing to click Weiter
   document.addEventListener('keydown', function (event) {

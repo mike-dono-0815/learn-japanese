@@ -942,3 +942,30 @@ img     { max-width: 100%; display: block; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--border-lt); }
+
+/* ══════════════════════════════════════════════════════════════════
+   ── AUDIO BUTTON ────────────────────────────────────────────────
+══════════════════════════════════════════════════════════════════ */
+.q-card { position: relative; }
+
+.btn-audio {
+  position: absolute;
+  bottom: 10px; right: 10px;
+  width: 34px; height: 34px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--surface3);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  font-size: 1rem;
+  color: var(--text2);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  line-height: 1;
+}
+.btn-audio:hover    { background: var(--navy-lt); color: var(--orange); border-color: var(--orange); }
+.btn-audio:active   { transform: scale(.93); }
+.btn-audio:disabled { opacity: .5; cursor: default; }
+
+/* Auto-play toggle — lights up orange when active */
+#audio-autoplay-btn.active { color: var(--orange); border-color: var(--orange); }
+

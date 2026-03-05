@@ -90,11 +90,21 @@ App.Scoring = (function () {
     return total >= 5 && (prog.correctCount / total) >= 0.85;
   }
 
+  /** Fisher-Yates shuffle — returns the array in-place. */
+  function shuffle(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+    }
+    return arr;
+  }
+
   return {
     selectNext:      selectNext,
     computeWeight:   computeWeight,
     masteryPercent:  masteryPercent,
-    isMastered:      isMastered
+    isMastered:      isMastered,
+    shuffle:         shuffle
   };
 
 }());
