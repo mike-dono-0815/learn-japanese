@@ -1,5 +1,2 @@
-# Pre-generated TTS audio files (large binaries, re-generate with scripts/download-audio.js)
-audio/
-
 # Local secrets — API keys, etc.
 .env.local
