@@ -124,6 +124,27 @@ var KB_DEFAULTS = {
       { id:"vocab_v5_13", japanese_romaji:"gomen nasai",        japanese_kana:"ごめんなさい",     german:"Es tut mir leid",          alternates_romaji:["gomennasai"], alternates_german:["tut mir leid","Entschuldigung"] },
       { id:"vocab_v5_14", japanese_romaji:"arigatou gozaimasu", japanese_kana:"ありがとうございます",german:"Vielen Dank",            alternates_romaji:["arigatou","arigato gozaimasu","arigatoo gozaimasu"], alternates_german:["vielen Dank","Danke sehr","Dankeschön"] },
       { id:"vocab_v5_15", japanese_romaji:"saa",                japanese_kana:"さあ",             german:"Hm, Nun ja ...",           alternates_romaji:["saa ...","sā"], alternates_german:["Hm","Nun ja","Tja"] }
+    ],
+
+    v6: [
+      { id:"vocab_v6_01", japanese_romaji:"asa",       japanese_kana:"あさ",       german:"Morgen, morgens",                  alternates_romaji:[],              alternates_german:["Morgen","morgens"] },
+      { id:"vocab_v6_02", japanese_romaji:"hiru",      japanese_kana:"ひる",       german:"Mittag, mittags",                  alternates_romaji:[],              alternates_german:["Mittag","mittags"] },
+      { id:"vocab_v6_03", japanese_romaji:"ban",       japanese_kana:"ばん",       german:"Abend, abends",                   alternates_romaji:[],              alternates_german:["Abend","abends"] },
+      { id:"vocab_v6_04", japanese_romaji:"ryouri",    japanese_kana:"りょうり",   german:"Gericht, Speise",                 alternates_romaji:[],              alternates_german:["Gericht","Speise"] },
+      { id:"vocab_v6_05", japanese_romaji:"gohan",     japanese_kana:"ごはん",     german:"gekochter Reis; Essen",            alternates_romaji:[],              alternates_german:["Reis","Essen","gekochter Reis"] },
+      { id:"vocab_v6_06", japanese_romaji:"asa-gohan", japanese_kana:"あさごはん", german:"Frühstück",                       alternates_romaji:["asagohan"],    alternates_german:[] },
+      { id:"vocab_v6_07", japanese_romaji:"hiru-gohan",japanese_kana:"ひるごはん", german:"Mittagessen",                     alternates_romaji:["hirugohan"],   alternates_german:[] },
+      { id:"vocab_v6_08", japanese_romaji:"ban-gohan", japanese_kana:"ばんごはん", german:"Abendessen",                      alternates_romaji:["bangohan"],    alternates_german:[] },
+      { id:"vocab_v6_09", japanese_romaji:"miso-shiru",japanese_kana:"みそしる",   german:"Miso-Suppe",                      alternates_romaji:["misoshiru"],   alternates_german:[] },
+      { id:"vocab_v6_10", japanese_romaji:"sashimi",   japanese_kana:"さしみ",     german:"roher Fisch in Scheiben",         alternates_romaji:[],              alternates_german:["Sashimi"] },
+      { id:"vocab_v6_11", japanese_romaji:"sorekara",  japanese_kana:"それから",   german:"dann, danach",                    alternates_romaji:[],              alternates_german:["dann","danach"] },
+      { id:"vocab_v6_12", japanese_romaji:"jaa",       japanese_kana:"じゃあ",     german:"tja, also",                       alternates_romaji:["ja a","jā"],   alternates_german:["tja","also"] },
+      { id:"vocab_v6_13", japanese_romaji:"aimasu",    japanese_kana:"あいます",   german:"(sich) treffen; begegnen",        alternates_romaji:[],              alternates_german:["treffen","begegnen","sich treffen"] },
+      { id:"vocab_v6_14", japanese_romaji:"myouji",    japanese_kana:"みょうじ",   german:"Familienname",                    alternates_romaji:[],              alternates_german:["Nachname"] },
+      { id:"vocab_v6_15", japanese_romaji:"danna-san", japanese_kana:"だんなさん", german:"Ehemann (höflich)",               alternates_romaji:["dannasan"],    alternates_german:["Ehemann","Mann"] },
+      { id:"vocab_v6_16", japanese_romaji:"kaimono",   japanese_kana:"かいもの",   german:"Einkäufe",                        alternates_romaji:[],              alternates_german:["Einkauf","Einkäufe","Einkaufen"] },
+      { id:"vocab_v6_17", japanese_romaji:"kuruma",    japanese_kana:"くるま",     german:"Auto, Wagen",                     alternates_romaji:[],              alternates_german:["Auto","Wagen"] },
+      { id:"vocab_v6_18", japanese_romaji:"chotto",    japanese_kana:"ちょっと",   german:"ein wenig, ein bisschen",         alternates_romaji:[],              alternates_german:["ein wenig","ein bisschen","kurz"] }
     ]
   },
 
@@ -226,6 +247,24 @@ var KB_DEFAULTS = {
       { id:"sent_v5_13", japanese_romaji:"anata mo Nihon-jin desu ka",           japanese_kana:"あなたもにほんじんですか",       german:"Sind Sie auch Japaner/in?",            alternates_german:["Bist du auch Japaner/in?"] },
       { id:"sent_v5_14", japanese_romaji:"tomodachi wa isha desu",               japanese_kana:"ともだちはいしゃです",           german:"Mein Freund ist Arzt.",                alternates_german:["Meine Freundin ist Ärztin.","Der Freund ist Arzt."] },
       { id:"sent_v5_15", japanese_romaji:"hito wa dare desu ka",                 japanese_kana:"ひとはだれですか",               german:"Wer ist diese Person?",                alternates_german:["Wer ist das?"] }
+    ],
+
+    v6: [
+      { id:"sent_v6_01", japanese_romaji:"asa-gohan o tabemasu",                  japanese_kana:"あさごはんをたべます",             german:"Ich esse Frühstück.",                   alternates_german:[] },
+      { id:"sent_v6_02", japanese_romaji:"hiru-gohan o tabemasu",                 japanese_kana:"ひるごはんをたべます",             german:"Ich esse Mittagessen.",                 alternates_german:["Ich esse zu Mittag."] },
+      { id:"sent_v6_03", japanese_romaji:"ban-gohan o tsukurimasu",               japanese_kana:"ばんごはんをつくります",           german:"Ich mache das Abendessen.",             alternates_german:["Ich bereite das Abendessen zu."] },
+      { id:"sent_v6_04", japanese_romaji:"miso-shiru o nomimasu",                 japanese_kana:"みそしるをのみます",               german:"Ich trinke Miso-Suppe.",                alternates_german:[] },
+      { id:"sent_v6_05", japanese_romaji:"kyou sashimi o tabemasu",               japanese_kana:"きょうさしみをたべます",           german:"Heute esse ich Sashimi.",               alternates_german:["Ich esse heute Sashimi."] },
+      { id:"sent_v6_06", japanese_romaji:"watashi wa ryouri o tsukurimasu",       japanese_kana:"わたしはりょうりをつくります",     german:"Ich bereite ein Gericht zu.",           alternates_german:["Ich koche ein Gericht.","Ich mache ein Gericht."] },
+      { id:"sent_v6_07", japanese_romaji:"sorekara ban-gohan o tabemasu",         japanese_kana:"それからばんごはんをたべます",     german:"Dann esse ich Abendessen.",             alternates_german:["Danach esse ich Abendessen."] },
+      { id:"sent_v6_08", japanese_romaji:"tomodachi to aimasu",                   japanese_kana:"ともだちとあいます",               german:"Ich treffe meinen Freund.",             alternates_german:["Ich treffe meine Freundin.","Ich treffe einen Freund."] },
+      { id:"sent_v6_09", japanese_romaji:"danna-san wa isha desu",                japanese_kana:"だんなさんはいしゃです",           german:"Mein Mann ist Arzt.",                   alternates_german:["Ihr Mann ist Arzt."] },
+      { id:"sent_v6_10", japanese_romaji:"kaimono o shimasu",                     japanese_kana:"かいものをします",                 german:"Ich gehe einkaufen.",                   alternates_german:["Ich mache Einkäufe."] },
+      { id:"sent_v6_11", japanese_romaji:"kuruma de kaimono o shimasu",           japanese_kana:"くるまでかいものをします",         german:"Ich gehe mit dem Auto einkaufen.",      alternates_german:["Ich fahre mit dem Auto einkaufen."] },
+      { id:"sent_v6_12", japanese_romaji:"chotto yasumimasu",                     japanese_kana:"ちょっとやすみます",               german:"Ich ruhe mich kurz aus.",               alternates_german:["Ich mache kurz Pause."] },
+      { id:"sent_v6_13", japanese_romaji:"asa wa gohan o tabemasu",               japanese_kana:"あさはごはんをたべます",           german:"Morgens esse ich Reis.",                alternates_german:["Am Morgen esse ich Reis."] },
+      { id:"sent_v6_14", japanese_romaji:"anata no myouji wa nan desu ka",        japanese_kana:"あなたのみょうじはなんですか",     german:"Wie ist Ihr Familienname?",             alternates_german:["Wie heißen Sie?","Was ist Ihr Nachname?"] },
+      { id:"sent_v6_15", japanese_romaji:"jaa, kaimono o shimasu",                japanese_kana:"じゃあ、かいものをします",         german:"Also, ich gehe einkaufen.",             alternates_german:["Tja, ich gehe einkaufen."] }
     ]
   }
 };

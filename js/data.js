@@ -40,7 +40,7 @@ App.Data = (function () {
    */
   function getSentences(version, cumulative) {
     var overrides = lsGet(LS_KB) || {};
-    var versions  = ['v1','v2','v3','v4','v5'];
+    var versions  = ['v1','v2','v3','v4','v5','v6'];
     var idx       = versions.indexOf(version);
     if (idx === -1) idx = 0;
 
@@ -65,7 +65,7 @@ App.Data = (function () {
 
   /** Cumulative vocabulary (V1..current) for sentence-mode context. */
   function getVocabUpTo(version) {
-    var versions = ['v1','v2','v3','v4','v5'];
+    var versions = ['v1','v2','v3','v4','v5','v6'];
     var idx      = versions.indexOf(version);
     var result   = [];
     for (var i = 0; i <= idx; i++) {
@@ -81,7 +81,7 @@ App.Data = (function () {
 
   /** List of available versions that have at least one entry. */
   function getAvailableVersions(type) {
-    return ['v1','v2','v3','v4','v5'].filter(function(v) {
+    return ['v1','v2','v3','v4','v5','v6'].filter(function(v) {
       if (type === 'vocabulary') return getVocabulary(v).length > 0;
       if (type === 'sentences')  return getSentences(v, false).length > 0;
       return false;
@@ -215,7 +215,8 @@ App.Data = (function () {
     v2: 'V2 – Alltag',
     v3: 'V3 – Freizeit & Medien',
     v4: 'V4 – Dinge & Handlungen',
-    v5: 'V5 – Personen & Berufe'
+    v5: 'V5 – Personen & Berufe',
+    v6: 'V6 – Mahlzeiten & Alltag'
   };
 
   function getVersionLabel(v) { return VERSION_LABELS[v] || v; }

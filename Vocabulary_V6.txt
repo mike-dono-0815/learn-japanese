@@ -1,0 +1,95 @@
+{
+  "vocabulary": [
+    {
+      "japanese_romaji": "asa",
+      "japanese_hiragana": "あさ",
+      "german": "Morgen, morgens"
+    },
+    {
+      "japanese_romaji": "hiru",
+      "japanese_hiragana": "ひる",
+      "german": "Mittag, mittags"
+    },
+    {
+      "japanese_romaji": "ban",
+      "japanese_hiragana": "ばん",
+      "german": "Abend, abends"
+    },
+    {
+      "japanese_romaji": "ryouri",
+      "japanese_hiragana": "りょうり",
+      "german": "Gericht, Speise"
+    },
+    {
+      "japanese_romaji": "gohan",
+      "japanese_hiragana": "ごはん",
+      "german": "gekochter Reis; Essen"
+    },
+    {
+      "japanese_romaji": "asa-gohan",
+      "japanese_hiragana": "あさごはん",
+      "german": "Frühstück"
+    },
+    {
+      "japanese_romaji": "hiru-gohan",
+      "japanese_hiragana": "ひるごはん",
+      "german": "Mittagessen"
+    },
+    {
+      "japanese_romaji": "ban-gohan",
+      "japanese_hiragana": "ばんごはん",
+      "german": "Abendessen"
+    },
+    {
+      "japanese_romaji": "miso-shiru",
+      "japanese_hiragana": "みそしる",
+      "german": "Miso-Suppe"
+    },
+    {
+      "japanese_romaji": "sashimi",
+      "japanese_hiragana": "さしみ",
+      "german": "roher Fisch in Scheiben"
+    },
+    {
+      "japanese_romaji": "sorekara",
+      "japanese_hiragana": "それから",
+      "german": "dann, danach"
+    },
+    {
+      "japanese_romaji": "jaa",
+      "japanese_hiragana": "じゃあ (では)",
+      "german": "tja, also (Verschleifung von „dewa“)"
+    },
+    {
+      "japanese_romaji": "aimasu",
+      "japanese_hiragana": "あいます",
+      "german": "(sich) treffen; begegnen"
+    },
+    {
+      "japanese_romaji": "myouji",
+      "japanese_hiragana": "みょうじ",
+      "german": "Familienname"
+    },
+    {
+      "japanese_romaji": "danna-san",
+      "japanese_hiragana": "だんなさん",
+      "german": "Ehemann (höflich)"
+    },
+    {
+      "japanese_romaji": "kaimono",
+      "japanese_hiragana": "かいもの",
+      "german": "Einkäufe"
+    },
+    {
+      "japanese_romaji": "kuruma",
+      "japanese_hiragana": "くるま",
+      "german": "Auto, Wagen"
+    },
+    {
+      "japanese_romaji": "chotto",
+      "japanese_hiragana": "ちょっと",
+      "german": "ein wenig, ein bisschen"
+    }
+  ],
+  "page_number": "66 - roku-juu-roku"
+}
