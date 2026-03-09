@@ -79,6 +79,15 @@
           <p class="setting-hint" id="version-hint">Enthält 19 Vokabeln</p>
         </div>
 
+        <!-- SCOPE -->
+        <div class="setting-group">
+          <label class="setting-label">Umfang</label>
+          <div class="btn-group" id="scope-group">
+            <button class="btn-toggle active" data-scope="cumulative" onclick="App.setScope('cumulative')">Kumulativ V1–Vx</button>
+            <button class="btn-toggle"        data-scope="single"     onclick="App.setScope('single')">Nur diese Version</button>
+          </div>
+        </div>
+
         <!-- DIRECTION (only shown in vocabulary mode) -->
         <div class="setting-group" id="direction-group">
           <label class="setting-label">Richtung</label>

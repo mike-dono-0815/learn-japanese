@@ -12,6 +12,7 @@ App.state = {
   screen:    'home',
   mode:      'vocabulary',    // 'vocabulary' | 'sentences'
   version:   'v1',
+  scope:     'cumulative',    // 'cumulative' | 'single'
   direction: 'de-to-jp',     // 'de-to-jp' | 'jp-to-de'  (vocab only)
   session:   null
 };
@@ -61,6 +62,15 @@ App.setVersion = function (v) {
   App._updateVersionHint();
 };
 
+App.setScope = function (scope) {
+  App.state.scope = scope;
+  document.querySelectorAll('#scope-group .btn-toggle').forEach(function (b) {
+    b.classList.toggle('active', b.dataset.scope === scope);
+  });
+  try { localStorage.setItem('jp_last_scope', scope); } catch(e) {}
+  App._updateVersionHint();
+};
+
 App.setDirection = function (dir) {
   App.state.direction = dir;
   document.querySelectorAll('#dir-group .btn-toggle').forEach(function (b) {
@@ -71,12 +81,18 @@ App.setDirection = function (dir) {
 App._updateVersionHint = function () {
   var hint = el('version-hint');
   if (!hint) return;
+  var v   = App.state.version;
+  var cum = App.state.scope === 'cumulative';
   if (App.state.mode === 'vocabulary') {
-    var count = App.Data.getVocabCount(App.state.version);
-    hint.textContent = 'Enthält ' + count + ' Vokabeln (kumulativ V1–' + App.state.version.toUpperCase() + ')';
+    var count = cum
+      ? App.Data.getVocabCount(v)
+      : App.Data.getVocabulary(v).length;
+    hint.textContent = 'Enthält ' + count + ' Vokabeln ' +
+      (cum ? '(kumulativ V1–' + v.toUpperCase() + ')' : '(nur ' + v.toUpperCase() + ')');
   } else {
-    var sents = App.Data.getSentences(App.state.version, true);
-    hint.textContent = 'Enthält ' + sents.length + ' Sätze (kumulativ V1–' + App.state.version.toUpperCase() + ')';
+    var sents = App.Data.getSentences(v, cum);
+    hint.textContent = 'Enthält ' + sents.length + ' Sätze ' +
+      (cum ? '(kumulativ V1–' + v.toUpperCase() + ')' : '(nur ' + v.toUpperCase() + ')');
   }
 };
 
@@ -87,11 +103,12 @@ App.startSession = function () {
   var mode    = App.state.mode;
   var version = App.state.version;
 
+  var cumulative = App.state.scope === 'cumulative';
   var items;
   if (mode === 'vocabulary') {
-    items = App.Data.getVocabUpTo(version);
+    items = cumulative ? App.Data.getVocabUpTo(version) : App.Data.getVocabulary(version);
   } else {
-    items = App.Data.getSentences(version, true);  // cumulative
+    items = App.Data.getSentences(version, cumulative);
   }
 
   if (!items || items.length === 0) {
@@ -630,6 +647,14 @@ document.addEventListener('DOMContentLoaded', function () {
       App.state.version = saved;
       var sel = el('version-select');
       if (sel) sel.value = saved;
+    }
+  } catch(e) {}
+
+  // Restore last-used scope if stored
+  try {
+    var savedScope = localStorage.getItem('jp_last_scope');
+    if (savedScope === 'single' || savedScope === 'cumulative') {
+      App.setScope(savedScope);
     }
   } catch(e) {}
 
