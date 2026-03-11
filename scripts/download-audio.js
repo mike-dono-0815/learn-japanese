@@ -53,6 +53,8 @@ const allVocab = [
   ...KB.vocabulary.v3,
   ...KB.vocabulary.v4,
   ...KB.vocabulary.v5,
+  ...KB.vocabulary.v6,
+  ...KB.vocabulary.v7,
 ];
 
 const allSentences = [
@@ -61,6 +63,8 @@ const allSentences = [
   ...KB.sentences.v3,
   ...KB.sentences.v4,
   ...KB.sentences.v5,
+  ...KB.sentences.v6,
+  ...KB.sentences.v7,
 ];
 
 /* ── Output directory ────────────────────────────────────────── */

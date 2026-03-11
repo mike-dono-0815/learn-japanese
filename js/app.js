@@ -521,7 +521,7 @@ App.Stats = {
     // Per-word progress for vocabulary
     var vocabSection = prg.vocabulary || {};
     var wordItems = [];
-    ['v1','v2','v3','v4','v5'].forEach(function(v) {
+    ['v1','v2','v3','v4','v5','v6','v7'].forEach(function(v) {
       App.Data.getVocabulary(v).forEach(function(item) {
         if (vocabSection[item.id]) {
           wordItems.push({ item: item, prog: vocabSection[item.id] });

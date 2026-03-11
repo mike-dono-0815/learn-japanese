@@ -145,6 +145,26 @@ var KB_DEFAULTS = {
       { id:"vocab_v6_16", japanese_romaji:"kaimono",   japanese_kana:"かいもの",   german:"Einkäufe",                        alternates_romaji:[],              alternates_german:["Einkauf","Einkäufe","Einkaufen"] },
       { id:"vocab_v6_17", japanese_romaji:"kuruma",    japanese_kana:"くるま",     german:"Auto, Wagen",                     alternates_romaji:[],              alternates_german:["Auto","Wagen"] },
       { id:"vocab_v6_18", japanese_romaji:"chotto",    japanese_kana:"ちょっと",   german:"ein wenig, ein bisschen",         alternates_romaji:[],              alternates_german:["ein wenig","ein bisschen","kurz"] }
+    ],
+
+    v7: [
+      { id:"vocab_v7_01", japanese_romaji:"kaisha",         japanese_kana:"かいしゃ",               german:"Firma",                              alternates_romaji:[],                        alternates_german:[] },
+      { id:"vocab_v7_02", japanese_romaji:"kaigi",          japanese_kana:"かいぎ",                 german:"Konferenz, Besprechung",              alternates_romaji:[],                        alternates_german:["Konferenz","Besprechung","Meeting"] },
+      { id:"vocab_v7_03", japanese_romaji:"yaa",            japanese_kana:"やあ",                   german:"Hallo! (als Ausruf)",                 alternates_romaji:[],                        alternates_german:["Hallo","Hi"] },
+      { id:"vocab_v7_04", japanese_romaji:"genki",          japanese_kana:"げんき",                 german:"gesund, wohlauf",                     alternates_romaji:[],                        alternates_german:["gesund","wohlauf"] },
+      { id:"vocab_v7_05", japanese_romaji:"o-kage-sama de", japanese_kana:"おかげさまで",           german:"Danke, gut.",                         alternates_romaji:["okagesamade"],           alternates_german:["Danke, gut","Gut, danke"] },
+      { id:"vocab_v7_06", japanese_romaji:"tabemono",       japanese_kana:"たべもの",               german:"Lebensmittel, Essen",                 alternates_romaji:[],                        alternates_german:["Lebensmittel","Essen"] },
+      { id:"vocab_v7_07", japanese_romaji:"nomimono",       japanese_kana:"のみもの",               german:"Getränk",                             alternates_romaji:[],                        alternates_german:[] },
+      { id:"vocab_v7_08", japanese_romaji:"o-kane",         japanese_kana:"おかね",                 german:"Geld",                                alternates_romaji:["okane"],                 alternates_german:[] },
+      { id:"vocab_v7_09", japanese_romaji:"biiru",          japanese_kana:"びーる / ビール",        german:"Bier",                                alternates_romaji:["bîru","biru","bīru"],    alternates_german:[] },
+      { id:"vocab_v7_10", japanese_romaji:"takusan",        japanese_kana:"たくさん",               german:"viel, viele",                         alternates_romaji:[],                        alternates_german:["viel","viele"] },
+      { id:"vocab_v7_11", japanese_romaji:"tokidoki",       japanese_kana:"ときどき",               german:"manchmal, ab und zu",                 alternates_romaji:[],                        alternates_german:["manchmal","ab und zu"] },
+      { id:"vocab_v7_12", japanese_romaji:"paatii",         japanese_kana:"ぱーてぃー / パーティー",german:"Party",                              alternates_romaji:["pâtî","paati","pātī"],   alternates_german:[] },
+      { id:"vocab_v7_13", japanese_romaji:"totemo",         japanese_kana:"とても",                 german:"sehr",                                alternates_romaji:[],                        alternates_german:[] },
+      { id:"vocab_v7_14", japanese_romaji:"arimasu",        japanese_kana:"あります",               german:"da sein, stattfinden, es gibt",        alternates_romaji:[],                        alternates_german:["da sein","stattfinden","es gibt"] },
+      { id:"vocab_v7_15", japanese_romaji:"kimasu",         japanese_kana:"きます",                 german:"kommen",                              alternates_romaji:[],                        alternates_german:[] },
+      { id:"vocab_v7_16", japanese_romaji:"ee",             japanese_kana:"ええ",                   german:"ja (weicher als hai)",                 alternates_romaji:[],                        alternates_german:["ja"] },
+      { id:"vocab_v7_17", japanese_romaji:"demo",           japanese_kana:"でも",                   german:"aber",                                alternates_romaji:[],                        alternates_german:[] }
     ]
   },
 
@@ -265,6 +285,24 @@ var KB_DEFAULTS = {
       { id:"sent_v6_13", japanese_romaji:"asa wa gohan o tabemasu",               japanese_kana:"あさはごはんをたべます",           german:"Morgens esse ich Reis.",                alternates_german:["Am Morgen esse ich Reis."] },
       { id:"sent_v6_14", japanese_romaji:"anata no myouji wa nan desu ka",        japanese_kana:"あなたのみょうじはなんですか",     german:"Wie ist Ihr Familienname?",             alternates_german:["Wie heißen Sie?","Was ist Ihr Nachname?"] },
       { id:"sent_v6_15", japanese_romaji:"jaa, kaimono o shimasu",                japanese_kana:"じゃあ、かいものをします",         german:"Also, ich gehe einkaufen.",             alternates_german:["Tja, ich gehe einkaufen."] }
+    ],
+
+    v7: [
+      { id:"sent_v7_01", japanese_romaji:"yaa, genki desu ka",                         japanese_kana:"やあ、げんきですか",                   german:"Hallo! Wie geht es dir?",                       alternates_german:["Hallo, wie geht es Ihnen?","Hi, wie geht es dir?"] },
+      { id:"sent_v7_02", japanese_romaji:"ee, o-kage-sama de",                         japanese_kana:"ええ、おかげさまで",                   german:"Ja, danke, gut.",                               alternates_german:["Ja, danke der Nachfrage.","Gut, danke."] },
+      { id:"sent_v7_03", japanese_romaji:"watashi wa kaisha ni kimasu",                japanese_kana:"わたしはかいしゃにきます",             german:"Ich komme in die Firma.",                       alternates_german:["Ich gehe in die Firma."] },
+      { id:"sent_v7_04", japanese_romaji:"kyou kaigi ga arimasu",                      japanese_kana:"きょうかいぎがあります",               german:"Heute gibt es eine Besprechung.",               alternates_german:["Heute habe ich eine Konferenz.","Heute findet eine Besprechung statt."] },
+      { id:"sent_v7_05", japanese_romaji:"tabemono o takusan kaimasu",                 japanese_kana:"たべものをたくさんかいます",           german:"Ich kaufe viele Lebensmittel.",                 alternates_german:["Ich kaufe viel Essen."] },
+      { id:"sent_v7_06", japanese_romaji:"biiru o nomimasu",                           japanese_kana:"びーるをのみます",                     german:"Ich trinke Bier.",                              alternates_german:[] },
+      { id:"sent_v7_07", japanese_romaji:"paatii ni tomodachi ga kimasu",              japanese_kana:"ぱーてぃーにともだちがきます",         german:"Mein Freund kommt zur Party.",                  alternates_german:["Meine Freundin kommt zur Party.","Freunde kommen zur Party."] },
+      { id:"sent_v7_08", japanese_romaji:"o-kane ga arimasu ka",                       japanese_kana:"おかねがありますか",                   german:"Haben Sie Geld?",                               alternates_german:["Hast du Geld?"] },
+      { id:"sent_v7_09", japanese_romaji:"nomimono wa nani desu ka",                   japanese_kana:"のみものはなにですか",                 german:"Was gibt es zu trinken?",                       alternates_german:["Was ist das Getränk?","Was trinken Sie?"] },
+      { id:"sent_v7_10", japanese_romaji:"watashi wa tokidoki biiru o nomimasu",       japanese_kana:"わたしはときどきびーるをのみます",     german:"Manchmal trinke ich Bier.",                     alternates_german:["Ich trinke manchmal Bier."] },
+      { id:"sent_v7_11", japanese_romaji:"demo, watashi wa genki desu",                japanese_kana:"でも、わたしはげんきです",             german:"Aber ich bin wohlauf.",                         alternates_german:["Aber ich bin gesund."] },
+      { id:"sent_v7_12", japanese_romaji:"paatii ni takusan hito ga kimasu",           japanese_kana:"ぱーてぃーにたくさんひとがきます",     german:"Zur Party kommen viele Leute.",                 alternates_german:["Viele Menschen kommen zur Party."] },
+      { id:"sent_v7_13", japanese_romaji:"kaisha ni kaigi ga arimasu",                 japanese_kana:"かいしゃにかいぎがあります",           german:"In der Firma gibt es eine Besprechung.",        alternates_german:["In der Firma findet eine Konferenz statt."] },
+      { id:"sent_v7_14", japanese_romaji:"tabemono mo nomimono mo arimasu",            japanese_kana:"たべものものみものもあります",         german:"Es gibt Essen und Getränke.",                   alternates_german:["Es gibt sowohl Essen als auch Getränke."] },
+      { id:"sent_v7_15", japanese_romaji:"watashi wa totemo genki desu",               japanese_kana:"わたしはとてもげんきです",             german:"Ich bin sehr wohlauf.",                         alternates_german:["Ich bin sehr gesund.","Ich bin sehr fit."] }
     ]
   }
 };
