@@ -1,0 +1,89 @@
+{
+  "vocabulary": [
+    {
+      "japanese_romaji": "kaisha",
+      "japanese_hiragana": "かいしゃ",
+      "german": "Firma"
+    },
+    {
+      "japanese_romaji": "kaigi",
+      "japanese_hiragana": "かいぎ",
+      "german": "Konferenz, geschäftl. Besprechung"
+    },
+    {
+      "japanese_romaji": "yaa",
+      "japanese_hiragana": "やあ",
+      "german": "Hallo! (als Ruf)"
+    },
+    {
+      "japanese_romaji": "genki",
+      "japanese_hiragana": "げんき",
+      "german": "gesund, wohlauf"
+    },
+    {
+      "japanese_romaji": "o-kage-sama de",
+      "japanese_hiragana": "おかげさまで",
+      "german": "Danke, gut. (Antwort auf „O-genki desu ka.“)"
+    },
+    {
+      "japanese_romaji": "tabemono",
+      "japanese_hiragana": "たべもの",
+      "german": "Lebensmittel, Essen"
+    },
+    {
+      "japanese_romaji": "nomimono",
+      "japanese_hiragana": "のみもの",
+      "german": "Getränk"
+    },
+    {
+      "japanese_romaji": "o-kane",
+      "japanese_hiragana": "おかね",
+      "german": "Geld"
+    },
+    {
+      "japanese_romaji": "bîru",
+      "japanese_hiragana": "びーる / ビール",
+      "german": "Bier"
+    },
+    {
+      "japanese_romaji": "takusan",
+      "japanese_hiragana": "たくさん",
+      "german": "viel, viele"
+    },
+    {
+      "japanese_romaji": "tokidoki",
+      "japanese_hiragana": "ときどき",
+      "german": "ab und zu, manchmal"
+    },
+    {
+      "japanese_romaji": "pâtî",
+      "japanese_hiragana": "ぱーてぃー / パーティー",
+      "german": "Party"
+    },
+    {
+      "japanese_romaji": "totemo",
+      "japanese_hiragana": "とても",
+      "german": "sehr"
+    },
+    {
+      "japanese_romaji": "arimasu",
+      "japanese_hiragana": "あります",
+      "german": "da sein, stattfinden, es gibt"
+    },
+    {
+      "japanese_romaji": "kimasu",
+      "japanese_hiragana": "きます",
+      "german": "kommen"
+    },
+    {
+      "japanese_romaji": "ee",
+      "japanese_hiragana": "ええ",
+      "german": "ja (weicher als „hai“)"
+    },
+    {
+      "japanese_romaji": "demo",
+      "japanese_hiragana": "でも",
+      "german": "aber"
+    }
+  ]
+}
