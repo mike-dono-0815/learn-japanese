@@ -165,6 +165,27 @@ var KB_DEFAULTS = {
       { id:"vocab_v7_15", japanese_romaji:"kimasu",         japanese_kana:"きます",                 german:"kommen",                              alternates_romaji:[],                        alternates_german:[] },
       { id:"vocab_v7_16", japanese_romaji:"ee",             japanese_kana:"ええ",                   german:"ja (weicher als hai)",                 alternates_romaji:[],                        alternates_german:["ja"] },
       { id:"vocab_v7_17", japanese_romaji:"demo",           japanese_kana:"でも",                   german:"aber",                                alternates_romaji:[],                        alternates_german:[] }
+    ],
+
+    v8: [
+      { id:"vocab_v8_01", japanese_romaji:"boushi",            japanese_kana:"ぼうし",                  german:"Hut, Mütze",                        alternates_romaji:[],                          alternates_german:["Hut","Mütze"] },
+      { id:"vocab_v8_02", japanese_romaji:"iro",               japanese_kana:"いろ",                    german:"Farbe",                             alternates_romaji:[],                          alternates_german:[] },
+      { id:"vocab_v8_03", japanese_romaji:"saizu",             japanese_kana:"さいず / サイズ",         german:"Größe",                             alternates_romaji:[],                          alternates_german:[] },
+      { id:"vocab_v8_04", japanese_romaji:"o-kyaku",           japanese_kana:"おきゃく",                german:"Gast, Kunde",                       alternates_romaji:["okyaku"],                  alternates_german:["Gast","Kunde"] },
+      { id:"vocab_v8_05", japanese_romaji:"umai",              japanese_kana:"うまい",                  german:"gut (wenn man etwas gut kann)",      alternates_romaji:[],                          alternates_german:["gut","geschickt"] },
+      { id:"vocab_v8_06", japanese_romaji:"yasui",             japanese_kana:"やすい",                  german:"preiswert, billig",                 alternates_romaji:[],                          alternates_german:["preiswert","billig","günstig"] },
+      { id:"vocab_v8_07", japanese_romaji:"kawaii",            japanese_kana:"かわいい",                german:"niedlich, süß",                     alternates_romaji:[],                          alternates_german:["niedlich","süß"] },
+      { id:"vocab_v8_08", japanese_romaji:"ookii",             japanese_kana:"おおきい",                german:"groß",                              alternates_romaji:["ooki","ōkii"],             alternates_german:[] },
+      { id:"vocab_v8_09", japanese_romaji:"chiisai",           japanese_kana:"ちいさい",                german:"klein",                             alternates_romaji:["chīsai"],                  alternates_german:[] },
+      { id:"vocab_v8_10", japanese_romaji:"ii",                japanese_kana:"いい",                    german:"gut",                               alternates_romaji:[],                          alternates_german:[] },
+      { id:"vocab_v8_11", japanese_romaji:"warui",             japanese_kana:"わるい",                  german:"schlecht",                          alternates_romaji:[],                          alternates_german:[] },
+      { id:"vocab_v8_12", japanese_romaji:"omoshiroi",         japanese_kana:"おもしろい",              german:"interessant",                       alternates_romaji:[],                          alternates_german:["interessant","lustig","amüsant"] },
+      { id:"vocab_v8_13", japanese_romaji:"muzukashii",        japanese_kana:"むずかしい",              german:"schwierig",                         alternates_romaji:["muzukashī"],               alternates_german:["schwierig","schwer"] },
+      { id:"vocab_v8_14", japanese_romaji:"ikaga",             japanese_kana:"いかが",                  german:"wie (höflich)",                     alternates_romaji:[],                          alternates_german:["wie"] },
+      { id:"vocab_v8_15", japanese_romaji:"donna",             japanese_kana:"どんな",                  german:"was für ein",                       alternates_romaji:[],                          alternates_german:["was für ein","welche Art"] },
+      { id:"vocab_v8_16", japanese_romaji:"iya / iya iya",     japanese_kana:"いや ・ いやいや",        german:"nein / aber nicht doch!",           alternates_romaji:["iya","iya iya"],           alternates_german:["nein","aber nicht doch","aber nein"] },
+      { id:"vocab_v8_17", japanese_romaji:"benkyou (shimasu)", japanese_kana:"べんきょう (します)",     german:"Studium, Lernen",                   alternates_romaji:["benkyou shimasu","benkyou"],alternates_german:["Studium","Lernen","lernen"] },
+      { id:"vocab_v8_18", japanese_romaji:"seito",             japanese_kana:"せいと",                  german:"Schüler",                           alternates_romaji:[],                          alternates_german:["Schüler","Schülerin"] }
     ]
   },
 
@@ -303,6 +324,24 @@ var KB_DEFAULTS = {
       { id:"sent_v7_13", japanese_romaji:"kaisha ni kaigi ga arimasu",                 japanese_kana:"かいしゃにかいぎがあります",           german:"In der Firma gibt es eine Besprechung.",        alternates_german:["In der Firma findet eine Konferenz statt."] },
       { id:"sent_v7_14", japanese_romaji:"tabemono mo nomimono mo arimasu",            japanese_kana:"たべものものみものもあります",         german:"Es gibt Essen und Getränke.",                   alternates_german:["Es gibt sowohl Essen als auch Getränke."] },
       { id:"sent_v7_15", japanese_romaji:"watashi wa totemo genki desu",               japanese_kana:"わたしはとてもげんきです",             german:"Ich bin sehr wohlauf.",                         alternates_german:["Ich bin sehr gesund.","Ich bin sehr fit."] }
+    ],
+
+    v8: [
+      { id:"sent_v8_01", japanese_romaji:"donna boushi desu ka",               japanese_kana:"どんなぼうしですか",               german:"Was für ein Hut ist das?",                  alternates_german:["Was für eine Mütze ist das?"] },
+      { id:"sent_v8_02", japanese_romaji:"kono boushi wa kawaii desu",         japanese_kana:"このぼうしはかわいいです",           german:"Dieser Hut ist niedlich.",                  alternates_german:["Diese Mütze ist süß.","Diese Mütze ist niedlich."] },
+      { id:"sent_v8_03", japanese_romaji:"nihongo wa muzukashii desu",         japanese_kana:"にほんごはむずかしいです",           german:"Japanisch ist schwierig.",                  alternates_german:["Die japanische Sprache ist schwierig."] },
+      { id:"sent_v8_04", japanese_romaji:"yasui boushi o kaimasu",             japanese_kana:"やすいぼうしをかいます",             german:"Ich kaufe einen billigen Hut.",              alternates_german:["Ich kaufe eine günstige Mütze."] },
+      { id:"sent_v8_05", japanese_romaji:"saizu wa ookii desu ka",             japanese_kana:"さいずはおおきいですか",             german:"Ist die Größe groß?",                       alternates_german:["Ist die Größe zu groß?"] },
+      { id:"sent_v8_06", japanese_romaji:"eiga wa omoshiroi desu",             japanese_kana:"えいがはおもしろいです",             german:"Der Film ist interessant.",                 alternates_german:["Der Film ist lustig."] },
+      { id:"sent_v8_07", japanese_romaji:"watashi wa benkyou shimasu",         japanese_kana:"わたしはべんきょうします",           german:"Ich lerne.",                                alternates_german:["Ich studiere."] },
+      { id:"sent_v8_08", japanese_romaji:"seito wa umai desu",                 japanese_kana:"せいとはうまいです",                 german:"Der Schüler ist gut (darin).",               alternates_german:["Die Schülerin ist gut darin."] },
+      { id:"sent_v8_09", japanese_romaji:"kono ryouri wa ikaga desu ka",       japanese_kana:"このりょうりはいかがですか",         german:"Wie finden Sie dieses Gericht?",            alternates_german:["Wie schmeckt Ihnen dieses Gericht?"] },
+      { id:"sent_v8_10", japanese_romaji:"biiru wa ii desu",                   japanese_kana:"びーるはいいです",                   german:"Das Bier ist gut.",                         alternates_german:[] },
+      { id:"sent_v8_11", japanese_romaji:"iya, chiisai desu",                  japanese_kana:"いや、ちいさいです",                 german:"Nein, es ist klein.",                       alternates_german:["Nein, das ist klein."] },
+      { id:"sent_v8_12", japanese_romaji:"o-kyaku wa biiru o nomimasu",        japanese_kana:"おきゃくはびーるをのみます",         german:"Der Gast trinkt Bier.",                     alternates_german:["Der Kunde trinkt Bier."] },
+      { id:"sent_v8_13", japanese_romaji:"donna eiga desu ka",                 japanese_kana:"どんなえいがですか",                 german:"Was für ein Film ist das?",                 alternates_german:["Was für ein Film ist es?"] },
+      { id:"sent_v8_14", japanese_romaji:"kaimono wa ikaga desu ka",           japanese_kana:"かいものはいかがですか",             german:"Wie war das Einkaufen?",                    alternates_german:["Wie war Ihr Einkauf?"] },
+      { id:"sent_v8_15", japanese_romaji:"seito wa takusan benkyou shimasu",   japanese_kana:"せいとはたくさんべんきょうします",   german:"Der Schüler lernt viel.",                   alternates_german:["Die Schülerin lernt viel."] }
     ]
   }
 };

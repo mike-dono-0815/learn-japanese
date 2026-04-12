@@ -1,0 +1,94 @@
+{
+  "vocabulary": [
+    {
+      "japanese_romaji": "boushi",
+      "japanese_hiragana": "ぼうし",
+      "german": "Hut, Mütze"
+    },
+    {
+      "japanese_romaji": "iro",
+      "japanese_hiragana": "いろ",
+      "german": "Farbe"
+    },
+    {
+      "japanese_romaji": "saizu",
+      "japanese_hiragana": "さいず / サイズ",
+      "german": "Größe"
+    },
+    {
+      "japanese_romaji": "o-kyaku",
+      "japanese_hiragana": "おきゃく",
+      "german": "Gast, Kunde"
+    },
+    {
+      "japanese_romaji": "umai",
+      "japanese_hiragana": "うまい",
+      "german": "gut (wenn man etwas gut kann)"
+    },
+    {
+      "japanese_romaji": "yasui",
+      "japanese_hiragana": "やすい",
+      "german": "preiswert, billig"
+    },
+    {
+      "japanese_romaji": "kawaii",
+      "japanese_hiragana": "かわいい",
+      "german": "niedlich, süß"
+    },
+    {
+      "japanese_romaji": "ookii",
+      "japanese_hiragana": "おおきい",
+      "german": "groß"
+    },
+    {
+      "japanese_romaji": "chiisai",
+      "japanese_hiragana": "ちいさい",
+      "german": "klein"
+    },
+    {
+      "japanese_romaji": "ii",
+      "japanese_hiragana": "いい",
+      "german": "gut"
+    },
+    {
+      "japanese_romaji": "warui",
+      "japanese_hiragana": "わるい",
+      "german": "schlecht"
+    },
+    {
+      "japanese_romaji": "omoshiroi",
+      "japanese_hiragana": "おもしろい",
+      "german": "interessant"
+    },
+    {
+      "japanese_romaji": "muzukashii",
+      "japanese_hiragana": "むずかしい",
+      "german": "schwierig"
+    },
+    {
+      "japanese_romaji": "ikaga",
+      "japanese_hiragana": "いかが",
+      "german": "wie"
+    },
+    {
+      "japanese_romaji": "donna",
+      "japanese_hiragana": "どんな",
+      "german": "was für ein"
+    },
+    {
+      "japanese_romaji": "iya / iya iya",
+      "japanese_hiragana": "いや ・ いやいや",
+      "german": "nein / aber nicht doch!"
+    },
+    {
+      "japanese_romaji": "benkyou (shimasu)",
+      "japanese_hiragana": "べんきょう (します)",
+      "german": "Studium, Lernen"
+    },
+    {
+      "japanese_romaji": "seito",
+      "japanese_hiragana": "せいと",
+      "german": "Schüler"
+    }
+  ]
+}
