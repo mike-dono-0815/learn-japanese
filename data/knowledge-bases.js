@@ -185,7 +185,14 @@ var KB_DEFAULTS = {
       { id:"vocab_v8_15", japanese_romaji:"donna",             japanese_kana:"どんな",                  german:"was für ein",                       alternates_romaji:[],                          alternates_german:["was für ein","welche Art"] },
       { id:"vocab_v8_16", japanese_romaji:"iya / iya iya",     japanese_kana:"いや ・ いやいや",        german:"nein / aber nicht doch!",           alternates_romaji:["iya","iya iya"],           alternates_german:["nein","aber nicht doch","aber nein"] },
       { id:"vocab_v8_17", japanese_romaji:"benkyou (shimasu)", japanese_kana:"べんきょう (します)",     german:"Studium, Lernen",                   alternates_romaji:["benkyou shimasu","benkyou"],alternates_german:["Studium","Lernen","lernen"] },
-      { id:"vocab_v8_18", japanese_romaji:"seito",             japanese_kana:"せいと",                  german:"Schüler",                           alternates_romaji:[],                          alternates_german:["Schüler","Schülerin"] }
+      { id:"vocab_v8_18", japanese_romaji:"seito",             japanese_kana:"せいと",                  german:"Schüler",                           alternates_romaji:[],                          alternates_german:["Schüler","Schülerin"] },
+      { id:"vocab_v8_19", japanese_romaji:"suki desu",                  japanese_kana:"すきです",                        german:"mögen",                             alternates_romaji:[],                          alternates_german:[] },
+      { id:"vocab_v8_20", japanese_romaji:"kirai desu",                 japanese_kana:"きらいです",                      german:"verabscheuen",                      alternates_romaji:[],                          alternates_german:["hassen","nicht mögen"] },
+      { id:"vocab_v8_21", japanese_romaji:"totemo suki desu",           japanese_kana:"とてもすきです",                  german:"sehr mögen",                        alternates_romaji:[],                          alternates_german:["sehr gerne mögen"] },
+      { id:"vocab_v8_22", japanese_romaji:"chotto suki desu",           japanese_kana:"ちょっとすきです",                german:"ein bisschen mögen",                alternates_romaji:[],                          alternates_german:["ein wenig mögen"] },
+      { id:"vocab_v8_23", japanese_romaji:"suki dewa arimasen",         japanese_kana:"すきではありません",              german:"nicht mögen",                       alternates_romaji:["suki ja arimasen"],         alternates_german:[] },
+      { id:"vocab_v8_24", japanese_romaji:"amari suki dewa arimasen",   japanese_kana:"あまりすきではありません",        german:"nicht so sehr mögen",               alternates_romaji:["amari suki ja arimasen"],   alternates_german:["nicht so gerne mögen"] },
+      { id:"vocab_v8_25", japanese_romaji:"zenzen suki dewa arimasen",  japanese_kana:"ぜんぜんすきではありません",      german:"überhaupt nicht mögen",             alternates_romaji:["zenzen suki ja arimasen"],  alternates_german:[] }
     ]
   },
 
