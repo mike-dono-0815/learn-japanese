@@ -193,6 +193,28 @@ var KB_DEFAULTS = {
       { id:"vocab_v8_23", japanese_romaji:"suki dewa arimasen",         japanese_kana:"すきではありません",              german:"nicht mögen",                       alternates_romaji:["suki ja arimasen"],         alternates_german:[] },
       { id:"vocab_v8_24", japanese_romaji:"amari suki dewa arimasen",   japanese_kana:"あまりすきではありません",        german:"nicht so sehr mögen",               alternates_romaji:["amari suki ja arimasen"],   alternates_german:["nicht so gerne mögen"] },
       { id:"vocab_v8_25", japanese_romaji:"zenzen suki dewa arimasen",  japanese_kana:"ぜんぜんすきではありません",      german:"überhaupt nicht mögen",             alternates_romaji:["zenzen suki ja arimasen"],  alternates_german:[] }
+    ],
+
+    v9: [
+      { id:"vocab_v9_01", japanese_romaji:"konban wa",      japanese_kana:"こんばんは",                 german:"Guten Abend!",               alternates_romaji:[],              alternates_german:[] },
+      { id:"vocab_v9_02", japanese_romaji:"doushite",       japanese_kana:"どうして",                   german:"warum",                     alternates_romaji:[],              alternates_german:[] },
+      { id:"vocab_v9_03", japanese_romaji:"resutoran",      japanese_kana:"れすとらん / レストラン",     german:"Restaurant",                alternates_romaji:[],              alternates_german:[] },
+      { id:"vocab_v9_04", japanese_romaji:"menyu",          japanese_kana:"めにゅー / メニュー",         german:"Speisekarte",               alternates_romaji:["menyuu"],      alternates_german:[] },
+      { id:"vocab_v9_05", japanese_romaji:"(o-)niku",       japanese_kana:"(お)にく",                   german:"Fleisch",                   alternates_romaji:["niku","o-niku"],alternates_german:[] },
+      { id:"vocab_v9_06", japanese_romaji:"niku-ryouri",    japanese_kana:"にくりょうり",               german:"Fleischgericht",            alternates_romaji:["nikuryouri"],  alternates_german:[] },
+      { id:"vocab_v9_07", japanese_romaji:"toriniku",       japanese_kana:"とりにく",                   german:"Hühnerfleisch",             alternates_romaji:[],              alternates_german:["Hähnchenfleisch","Geflügel"] },
+      { id:"vocab_v9_08", japanese_romaji:"gyuuniku",       japanese_kana:"ぎゅうにく",                 german:"Rindfleisch",               alternates_romaji:["gyūniku"],     alternates_german:[] },
+      { id:"vocab_v9_09", japanese_romaji:"kao",            japanese_kana:"かお",                       german:"Gesicht",                   alternates_romaji:[],              alternates_german:[] },
+      { id:"vocab_v9_10", japanese_romaji:"kao-iro",        japanese_kana:"かおいろ",                   german:"Gesichtsfarbe, Aussehen",   alternates_romaji:["kaoiro"],      alternates_german:["Gesichtsfarbe","Aussehen"] },
+      { id:"vocab_v9_11", japanese_romaji:"tenki",          japanese_kana:"てんき",                     german:"Wetter",                    alternates_romaji:[],              alternates_german:[] },
+      { id:"vocab_v9_12", japanese_romaji:"natsu",          japanese_kana:"なつ",                       german:"Sommer",                    alternates_romaji:[],              alternates_german:[] },
+      { id:"vocab_v9_13", japanese_romaji:"oishii",         japanese_kana:"おいしい",                   german:"lecker, wohlschmeckend",    alternates_romaji:[],              alternates_german:["lecker","wohlschmeckend"] },
+      { id:"vocab_v9_14", japanese_romaji:"mazui",          japanese_kana:"まずい",                     german:"nicht gut schmeckend",      alternates_romaji:[],              alternates_german:["schlecht schmeckend","ungenießbar"] },
+      { id:"vocab_v9_15", japanese_romaji:"isogashii",      japanese_kana:"いそがしい",                 german:"(viel) beschäftigt",        alternates_romaji:[],              alternates_german:["beschäftigt","viel zu tun haben"] },
+      { id:"vocab_v9_16", japanese_romaji:"atsui",          japanese_kana:"あつい",                     german:"heiß",                      alternates_romaji:[],              alternates_german:[] },
+      { id:"vocab_v9_17", japanese_romaji:"suzushii",       japanese_kana:"すずしい",                   german:"angenehm kühl",             alternates_romaji:[],              alternates_german:["kühl"] },
+      { id:"vocab_v9_18", japanese_romaji:"samui",          japanese_kana:"さむい",                     german:"unangenehm kalt",           alternates_romaji:[],              alternates_german:["kalt"] },
+      { id:"vocab_v9_19", japanese_romaji:"tsumetai",       japanese_kana:"つめたい",                   german:"kalt (bei Berührung)",      alternates_romaji:[],              alternates_german:["kalt"] }
     ]
   },
 
@@ -349,6 +371,24 @@ var KB_DEFAULTS = {
       { id:"sent_v8_13", japanese_romaji:"donna eiga desu ka",                 japanese_kana:"どんなえいがですか",                 german:"Was für ein Film ist das?",                 alternates_german:["Was für ein Film ist es?"] },
       { id:"sent_v8_14", japanese_romaji:"kaimono wa ikaga desu ka",           japanese_kana:"かいものはいかがですか",             german:"Wie war das Einkaufen?",                    alternates_german:["Wie war Ihr Einkauf?"] },
       { id:"sent_v8_15", japanese_romaji:"seito wa takusan benkyou shimasu",   japanese_kana:"せいとはたくさんべんきょうします",   german:"Der Schüler lernt viel.",                   alternates_german:["Die Schülerin lernt viel."] }
+    ],
+
+    v9: [
+      { id:"sent_v9_01", japanese_romaji:"konban wa, resutoran e ikimasu",     japanese_kana:"こんばんは、れすとらんへいきます",   german:"Guten Abend, ich gehe ins Restaurant.",    alternates_german:[] },
+      { id:"sent_v9_02", japanese_romaji:"menyu wa ikaga desu ka",             japanese_kana:"めにゅーはいかがですか",             german:"Wie finden Sie die Speisekarte?",          alternates_german:["Wie ist die Speisekarte?"] },
+      { id:"sent_v9_03", japanese_romaji:"toriniku wa oishii desu",            japanese_kana:"とりにくはおいしいです",             german:"Das Hühnerfleisch ist lecker.",            alternates_german:["Das Hühnerfleisch schmeckt gut."] },
+      { id:"sent_v9_04", japanese_romaji:"gyuuniku o tabemasu",                japanese_kana:"ぎゅうにくをたべます",               german:"Ich esse Rindfleisch.",                    alternates_german:[] },
+      { id:"sent_v9_05", japanese_romaji:"kono niku-ryouri wa oishii desu ka", japanese_kana:"このにくりょうりはおいしいですか",   german:"Ist dieses Fleischgericht lecker?",        alternates_german:["Schmeckt dieses Fleischgericht?"] },
+      { id:"sent_v9_06", japanese_romaji:"tenki wa ii desu",                   japanese_kana:"てんきはいいです",                   german:"Das Wetter ist gut.",                      alternates_german:["Das Wetter ist schön."] },
+      { id:"sent_v9_07", japanese_romaji:"natsu wa atsui desu",                japanese_kana:"なつはあついです",                   german:"Der Sommer ist heiß.",                     alternates_german:[] },
+      { id:"sent_v9_08", japanese_romaji:"doushite samui desu ka",             japanese_kana:"どうしてさむいですか",               german:"Warum ist es kalt?",                       alternates_german:[] },
+      { id:"sent_v9_09", japanese_romaji:"kono koohii wa tsumetai desu",       japanese_kana:"このこーひーはつめたいです",         german:"Dieser Kaffee ist kalt.",                  alternates_german:[] },
+      { id:"sent_v9_10", japanese_romaji:"isogashii desu ka",                  japanese_kana:"いそがしいですか",                   german:"Sind Sie beschäftigt?",                    alternates_german:["Haben Sie viel zu tun?"] },
+      { id:"sent_v9_11", japanese_romaji:"doushite isogashii desu ka",         japanese_kana:"どうしていそがしいですか",           german:"Warum sind Sie beschäftigt?",              alternates_german:["Warum haben Sie so viel zu tun?"] },
+      { id:"sent_v9_12", japanese_romaji:"kono ryouri wa mazui desu",          japanese_kana:"このりょうりはまずいです",           german:"Dieses Gericht schmeckt nicht gut.",       alternates_german:["Dieses Essen ist nicht gut."] },
+      { id:"sent_v9_13", japanese_romaji:"niku wa oishii desu",                japanese_kana:"にくはおいしいです",                 german:"Das Fleisch ist lecker.",                  alternates_german:["Das Fleisch schmeckt gut."] },
+      { id:"sent_v9_14", japanese_romaji:"suzushii tenki desu",                japanese_kana:"すずしいてんきです",                 german:"Das Wetter ist angenehm kühl.",            alternates_german:["Es ist kühl."] },
+      { id:"sent_v9_15", japanese_romaji:"kao-iro ga warui desu",              japanese_kana:"かおいろがわるいです",               german:"Die Gesichtsfarbe ist schlecht.",          alternates_german:["Sie sehen nicht gut aus."] }
     ]
   }
 };
