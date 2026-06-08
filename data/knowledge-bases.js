@@ -215,6 +215,21 @@ var KB_DEFAULTS = {
       { id:"vocab_v9_17", japanese_romaji:"suzushii",       japanese_kana:"すずしい",                   german:"angenehm kühl",             alternates_romaji:[],              alternates_german:["kühl"] },
       { id:"vocab_v9_18", japanese_romaji:"samui",          japanese_kana:"さむい",                     german:"unangenehm kalt",           alternates_romaji:[],              alternates_german:["kalt"] },
       { id:"vocab_v9_19", japanese_romaji:"tsumetai",       japanese_kana:"つめたい",                   german:"kalt (bei Berührung)",      alternates_romaji:[],              alternates_german:["kalt"] }
+    ],
+
+    v10: [
+      { id:"vocab_v10_01", japanese_romaji:"ryokou",              japanese_kana:"りょこう",   german:"Reise",                        alternates_romaji:[],                    alternates_german:[] },
+      { id:"vocab_v10_02", japanese_romaji:"ame",                 japanese_kana:"あめ",       german:"Regen",                        alternates_romaji:[],                    alternates_german:[] },
+      { id:"vocab_v10_03", japanese_romaji:"jikan",               japanese_kana:"じかん",     german:"Zeit",                         alternates_romaji:[],                    alternates_german:[] },
+      { id:"vocab_v10_04", japanese_romaji:"ooi",                 japanese_kana:"おおい",     german:"zahlreich, viel",              alternates_romaji:[],                    alternates_german:["zahlreich","viel"] },
+      { id:"vocab_v10_05", japanese_romaji:"atarashii",           japanese_kana:"あたらしい", german:"neu",                          alternates_romaji:[],                    alternates_german:[] },
+      { id:"vocab_v10_06", japanese_romaji:"mijikai",             japanese_kana:"みじかい",   german:"kurz",                         alternates_romaji:[],                    alternates_german:[] },
+      { id:"vocab_v10_07", japanese_romaji:"furui",               japanese_kana:"ふるい",     german:"alt (Dinge)",                  alternates_romaji:[],                    alternates_german:["alt"] },
+      { id:"vocab_v10_08", japanese_romaji:"tsumaranai",          japanese_kana:"つまらない", german:"langweilig, uninteressant",    alternates_romaji:[],                    alternates_german:["langweilig","uninteressant"] },
+      { id:"vocab_v10_09", japanese_romaji:"nagai",               japanese_kana:"ながい",     german:"lang",                         alternates_romaji:[],                    alternates_german:[] },
+      { id:"vocab_v10_10", japanese_romaji:"tanoshii",            japanese_kana:"たのしい",   german:"amüsant, schön, toll",         alternates_romaji:[],                    alternates_german:["amüsant","schön","toll","angenehm"] },
+      { id:"vocab_v10_11", japanese_romaji:"dou",                 japanese_kana:"どう",       german:"wie",                          alternates_romaji:[],                    alternates_german:[] },
+      { id:"vocab_v10_12", japanese_romaji:"zannen desu / deshita",japanese_kana:"ざんねんです、でした",german:"es ist schade",       alternates_romaji:["zannen desu","zannen deshita"],alternates_german:["schade","wie schade"] }
     ]
   },
 
@@ -389,6 +404,24 @@ var KB_DEFAULTS = {
       { id:"sent_v9_13", japanese_romaji:"niku wa oishii desu",                japanese_kana:"にくはおいしいです",                 german:"Das Fleisch ist lecker.",                  alternates_german:["Das Fleisch schmeckt gut."] },
       { id:"sent_v9_14", japanese_romaji:"suzushii tenki desu",                japanese_kana:"すずしいてんきです",                 german:"Das Wetter ist angenehm kühl.",            alternates_german:["Es ist kühl."] },
       { id:"sent_v9_15", japanese_romaji:"kao-iro ga warui desu",              japanese_kana:"かおいろがわるいです",               german:"Die Gesichtsfarbe ist schlecht.",          alternates_german:["Sie sehen nicht gut aus."] }
+    ],
+
+    v10: [
+      { id:"sent_v10_01", japanese_romaji:"ryokou wa tanoshii desu",              japanese_kana:"りょこうはたのしいです",         german:"Die Reise ist toll.",                         alternates_german:["Die Reise ist schön.","Die Reise macht Spaß."] },
+      { id:"sent_v10_02", japanese_romaji:"jikan ga arimasu ka",                  japanese_kana:"じかんがありますか",             german:"Haben Sie Zeit?",                             alternates_german:["Hast du Zeit?"] },
+      { id:"sent_v10_03", japanese_romaji:"atarashii hon o kaimasu",              japanese_kana:"あたらしいほんをかいます",       german:"Ich kaufe ein neues Buch.",                   alternates_german:[] },
+      { id:"sent_v10_04", japanese_romaji:"furui tokei desu",                     japanese_kana:"ふるいとけいです",               german:"Das ist eine alte Uhr.",                      alternates_german:["Das ist ein altes Uhr."] },
+      { id:"sent_v10_05", japanese_romaji:"nagai eiga wa tsumaranai desu",        japanese_kana:"ながいえいがはつまらないです",   german:"Der lange Film ist langweilig.",              alternates_german:[] },
+      { id:"sent_v10_06", japanese_romaji:"ryokou wa dou deshita ka",             japanese_kana:"りょこうはどうでしたか",         german:"Wie war die Reise?",                          alternates_german:[] },
+      { id:"sent_v10_07", japanese_romaji:"zannen desu, jikan ga arimasen",       japanese_kana:"ざんねんです、じかんがありません",german:"Es ist schade, ich habe keine Zeit.",         alternates_german:["Schade, ich habe keine Zeit."] },
+      { id:"sent_v10_08", japanese_romaji:"tanoshii ryokou deshita",              japanese_kana:"たのしいりょこうでした",         german:"Es war eine tolle Reise.",                    alternates_german:["Es war eine schöne Reise."] },
+      { id:"sent_v10_09", japanese_romaji:"ame desu",                             japanese_kana:"あめです",                       german:"Es regnet.",                                  alternates_german:["Es ist Regen."] },
+      { id:"sent_v10_10", japanese_romaji:"atarashii resutoran wa oishii desu",   japanese_kana:"あたらしいれすとらんはおいしいです",german:"Das neue Restaurant ist lecker.",           alternates_german:[] },
+      { id:"sent_v10_11", japanese_romaji:"mijikai ryokou desu",                  japanese_kana:"みじかいりょこうです",           german:"Es ist eine kurze Reise.",                    alternates_german:["Das ist eine kurze Reise."] },
+      { id:"sent_v10_12", japanese_romaji:"dou desu ka",                          japanese_kana:"どうですか",                     german:"Wie ist es?",                                 alternates_german:["Wie war es?","Wie finden Sie das?"] },
+      { id:"sent_v10_13", japanese_romaji:"ooi jikan ga arimasu",                 japanese_kana:"おおいじかんがあります",         german:"Es gibt viel Zeit.",                          alternates_german:["Ich habe viel Zeit."] },
+      { id:"sent_v10_14", japanese_romaji:"furui resutoran desu ga, oishii desu", japanese_kana:"ふるいれすとらんですが、おいしいです",german:"Das Restaurant ist alt, aber lecker.",      alternates_german:[] },
+      { id:"sent_v10_15", japanese_romaji:"ryokou wa nagai desu ka",              japanese_kana:"りょこうはながいですか",         german:"Ist die Reise lang?",                         alternates_german:[] }
     ]
   }
 };

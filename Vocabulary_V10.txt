@@ -1,0 +1,64 @@
+{
+  "vocabulary": [
+    {
+      "japanese_romaji": "ryokou",
+      "japanese_hiragana": "りょこう",
+      "german": "Reise"
+    },
+    {
+      "japanese_romaji": "ame",
+      "japanese_hiragana": "あめ",
+      "german": "Regen"
+    },
+    {
+      "japanese_romaji": "jikan",
+      "japanese_hiragana": "じかん",
+      "german": "Zeit"
+    },
+    {
+      "japanese_romaji": "ooi",
+      "japanese_hiragana": "おおい",
+      "german": "zahlreich, viel"
+    },
+    {
+      "japanese_romaji": "atarashii",
+      "japanese_hiragana": "あたらしい",
+      "german": "neu"
+    },
+    {
+      "japanese_romaji": "mijikai",
+      "japanese_hiragana": "みじかい",
+      "german": "kurz"
+    },
+    {
+      "japanese_romaji": "furui",
+      "japanese_hiragana": "ふるい",
+      "german": "alt (Dinge)"
+    },
+    {
+      "japanese_romaji": "tsumaranai",
+      "japanese_hiragana": "つまらない",
+      "german": "langweilig, uninteressant"
+    },
+    {
+      "japanese_romaji": "nagai",
+      "japanese_hiragana": "ながい",
+      "german": "lang"
+    },
+    {
+      "japanese_romaji": "tanoshii",
+      "japanese_hiragana": "たのしい",
+      "german": "amüsant, schön, toll"
+    },
+    {
+      "japanese_romaji": "dou",
+      "japanese_hiragana": "どう",
+      "german": "wie"
+    },
+    {
+      "japanese_romaji": "zannen desu / deshita",
+      "japanese_hiragana": "ざんねんです、でした",
+      "german": "es ist schade"
+    }
+  ]
+}

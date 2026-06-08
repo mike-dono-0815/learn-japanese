@@ -40,7 +40,7 @@ App.Data = (function () {
    */
   function getSentences(version, cumulative) {
     var overrides = lsGet(LS_KB) || {};
-    var versions  = ['v1','v2','v3','v4','v5','v6','v7','v8','v9'];
+    var versions  = ['v1','v2','v3','v4','v5','v6','v7','v8','v9','v10'];
     var idx       = versions.indexOf(version);
     if (idx === -1) idx = 0;
 
@@ -65,7 +65,7 @@ App.Data = (function () {
 
   /** Cumulative vocabulary (V1..current) for sentence-mode context. */
   function getVocabUpTo(version) {
-    var versions = ['v1','v2','v3','v4','v5','v6','v7','v8','v9'];
+    var versions = ['v1','v2','v3','v4','v5','v6','v7','v8','v9','v10'];
     var idx      = versions.indexOf(version);
     var result   = [];
     for (var i = 0; i <= idx; i++) {
@@ -81,7 +81,7 @@ App.Data = (function () {
 
   /** List of available versions that have at least one entry. */
   function getAvailableVersions(type) {
-    return ['v1','v2','v3','v4','v5','v6','v7','v8','v9'].filter(function(v) {
+    return ['v1','v2','v3','v4','v5','v6','v7','v8','v9','v10'].filter(function(v) {
       if (type === 'vocabulary') return getVocabulary(v).length > 0;
       if (type === 'sentences')  return getSentences(v, false).length > 0;
       return false;
@@ -219,7 +219,8 @@ App.Data = (function () {
     v6: 'V6 – Mahlzeiten & Alltag',
     v7: 'V7 – Gespräche & Büro',
     v8: 'V8 – Adjektive & Kleidung',
-    v9: 'V9 – Restaurant & Wetter'
+    v9: 'V9 – Restaurant & Wetter',
+    v10: 'V10 – Reisen & Adjektive'
   };
 
   function getVersionLabel(v) { return VERSION_LABELS[v] || v; }
