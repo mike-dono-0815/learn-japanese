@@ -1,0 +1,99 @@
+{
+  "vocabulary": [
+    {
+      "japanese_romaji": "konban wa",
+      "japanese_hiragana": "こんばんは",
+      "german": "Guten Abend!"
+    },
+    {
+      "japanese_romaji": "doushite",
+      "japanese_hiragana": "どうして",
+      "german": "warum"
+    },
+    {
+      "japanese_romaji": "resutoran",
+      "japanese_hiragana": "れすとらん / レストラン",
+      "german": "Restaurant"
+    },
+    {
+      "japanese_romaji": "menyū",
+      "japanese_hiragana": "めにゅー / メニュー",
+      "german": "Speisekarte"
+    },
+    {
+      "japanese_romaji": "(o-)niku",
+      "japanese_hiragana": "おにく",
+      "german": "Fleisch"
+    },
+    {
+      "japanese_romaji": "niku-ryouri",
+      "japanese_hiragana": "にくりょうり",
+      "german": "Fleischgericht"
+    },
+    {
+      "japanese_romaji": "toriniku",
+      "japanese_hiragana": "とりにく",
+      "german": "Hühnerfleisch"
+    },
+    {
+      "japanese_romaji": "gyūniku",
+      "japanese_hiragana": "ぎゅうにく",
+      "german": "Rindfleisch"
+    },
+    {
+      "japanese_romaji": "kao",
+      "japanese_hiragana": "かお",
+      "german": "Gesicht"
+    },
+    {
+      "japanese_romaji": "kao-iro",
+      "japanese_hiragana": "かおいろ",
+      "german": "Gesichtsfarbe, Aussehen"
+    },
+    {
+      "japanese_romaji": "tenki",
+      "japanese_hiragana": "てんき",
+      "german": "Wetter"
+    },
+    {
+      "japanese_romaji": "natsu",
+      "japanese_hiragana": "なつ",
+      "german": "Sommer"
+    },
+    {
+      "japanese_romaji": "oishii",
+      "japanese_hiragana": "おいしい",
+      "german": "lecker, wohlschmeckend"
+    },
+    {
+      "japanese_romaji": "mazui",
+      "japanese_hiragana": "まずい",
+      "german": "nicht gut schmeckend"
+    },
+    {
+      "japanese_romaji": "isogashii",
+      "japanese_hiragana": "いそがしい",
+      "german": "(viel) beschäftigt"
+    },
+    {
+      "japanese_romaji": "atsui",
+      "japanese_hiragana": "あつい",
+      "german": "heiß"
+    },
+    {
+      "japanese_romaji": "suzushii",
+      "japanese_hiragana": "すずしい",
+      "german": "angenehm kühl"
+    },
+    {
+      "japanese_romaji": "samui",
+      "japanese_hiragana": "さむい",
+      "german": "unangenehm kalt"
+    },
+    {
+      "japanese_romaji": "tsumetai",
+      "japanese_hiragana": "つめたい",
+      "german": "kalt (bei Berührung)"
+    }
+  ]
+}
